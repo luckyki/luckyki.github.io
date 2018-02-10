@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[transplant]]></title>
+    <url>%2F2018%2F02%2F09%2Ftransplant%2F</url>
+    <content type="text"><![CDATA[今天笔记本终于到了,终于可以摆脱老笔记本的开机三分钟了。以前在搭建hexo+github博客时就思考过”如果电脑重装系统或者换电脑了怎么接着写博客”。这不机会折腾的机会就来了，开启搜索之路。在经过漫长的新机装机之路。也是有许多感触的。win10系统较于win7变化还是比较大的，基本操作做了一些改变，添加了Cortana,添加了商店(应该有很多变化吧，滑稽脸目前我只感觉到这些变化)。以前用win7真的只是办公，世界已经在发生翻天覆地的变化，自己却不知，这才是最可怕的吧！混沌前行，突然间就发现世界变了，其实不是世界变了，只是自己在舒适区待久了。要不断尝试新事物，哪怕别人win10目前兼容性还不好，win7办公足矣，但是人生不是只为工作，如果只有成长，没有进步那人生就是在原地踏步。 不断的百度，论坛各种资源的翻阅终于理清了迁移的思路。1、其实和初次搭建博客差不多，只是将以前的score、_config.yml、themes文件替换掉新环境博客目录下的同名问价就行。2、方法1会将GitHub上的提交重新覆盖，会丢失以前的记录。另一种通过分支的思想操作。]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[终于遇见你]]></title>
+    <url>%2F2018%2F02%2F09%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一个想法]]></title>
+    <url>%2F2018%2F02%2F08%2Fyigexiangfan%2F</url>
+    <content type="text"><![CDATA[现在的人们生活压力大，尤其是90后一代的，现在人们对动物的依赖越来越大。也许只有自己的狗子和主子才不会嫌弃自己，才是自己的真爱吧！做一个动物语音分享视屏看来还是有需求的，需求是源泉，简单直接才是王道。配合动物’语言识别’，兽语过八级。我看行。]]></content>
+      <tags>
+        <tag>Light and light</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ubuntu]]></title>
+    <url>%2F2018%2F02%2F08%2Fubuntu%2F</url>
+    <content type="text"><![CDATA[apt-get，是一条linux命令，适用于deb包管理式的操作系统，主要用于自动从互联网的软件仓库中搜索、安装、升级、卸载软件或操作系统。 vimUbuntu的vim使用在命令行窗口中输入以下命令即可 启动vimvim 直接启动vim vim filename 打开vim并创建名为filename的文件 退出命令:wq 保存并退出 ZZ 保存并退出 :q! 强制退出并忽略所有更改 :e! 放弃所有修改，并打开原来文件 delectcd filerm -r file]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Nginx]]></title>
+    <url>%2F2018%2F02%2F07%2FNginx%2F</url>
+    <content type="text"><![CDATA[Nginx (engine x)是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3） 代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强.因它的稳定性、丰富的功能集、示例配置文件和低系统资源的消耗而闻名。 代理（英语：Proxy），也称网络代理，是一种特殊的网络服务，允许一个网络终端（一般为客户端）通过这个服务与另一个网络终端（一般为服务器）进行非直接的连接。一些网关、路由器等网络设备具备网络代理功能。一般认为代理服务有利于保障网络终端的隐私或安全，防止攻击。 提供代理服务的电脑系统或其它类型的网络终端称为代理服务器（英文：Proxy Server）。一个完整的代理请求过程为：客户端首先与代理服务器创建连接，接着根据代理服务器所使用的代理协议，请求对目标服务器创建连接、或者获得目标服务器的指定资源（如：文件）。在后一种情况中，代理服务器可能对目标服务器的资源下载至本地缓存，如果客户端所要获取的资源在代理服务器的缓存之中，则代理服务器并不会向目标服务器发送请求，而是直接返回缓存了的资源。一些代理协议允许代理服务器改变客户端的原始请求、目标服务器的原始响应，以满足代理协议的需要。代理服务器的选项和设置在计算机程序中，通常包括一个“防火墙”，允许用户输入代理地址，它会遮盖他们的网络活动，可以允许绕过互联网过滤实现网络访问。 反向代理服务器架设在服务器端，通过缓冲经常被请求的页面来缓解服务器的工作量。 服务器是独立的硬件设备.有独立的内存.硬盘.带宽.用户可以根据需要安装与配置各种网站环境.以及运行各种软件.无论是性能还是安全方面都非常强大.但相对的成本也较高.主要是针对较大规模的网站来使用. 空间又叫虚拟主机.它是利用虚拟化技术在服务器硬盘上划分出来的一部分虚拟容量.共享的是服务器的IP和带宽.它只有一个FTP权限.用户通过FTP将网站数据上传到虚拟主机目录.并解析域名来实现访问.功能比较单一.它所支持的程序也是在服务器上默认配置好的.无论是性能还是安全方面都与服务器有很大的差距. VPS是虚拟服务器的意思.它是在服务器上划分出来的一部分资源搭建而成.有独立的内存.硬盘.带宽.而且有独立的IP.在功能与使用上与服务器一模一样.用户在本地通过远程操作即可.可以根据需要安装各种操作系统.可以配置各种网站运行环境.阿里云ubuntu部署hexo,并与本地同步，实现自动部署阿里云Esc建网站独享虚机一元使用2周]]></content>
+      <tags>
+        <tag>厚积薄发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo博客进阶]]></title>
+    <url>%2F2018%2F02%2F06%2Fhexo%E5%8D%9A%E5%AE%A2%E8%BF%9B%E9%98%B6%2F</url>
+    <content type="text"><![CDATA[不日前，完成了了blog的搭建，又花了几天更换了next主题参照官方文档完成了主题配置。总感觉每次登陆自己的博客，域名好LOW呀！这不看到了这篇文章,废话不多说开干！ 1、购买域名本篇以阿里云为例 首先注册阿里云账号，如果有淘宝账号的，可以直接登录。 登录以后，先进行实名认证（购买域名要用到 认证信息提交完毕后，可能需要一两天的审核时间。 认证完毕后回到首页，上方导航栏，产品-&gt;点击 万网，搜索自己想要的域名并进行购买（域名持有者选择个人，这里就用到之前的认证）。 购买完毕后，回到首页点击右上方的控制台，进入后点击上方导航栏的产品与服务，然后选择域名，点击进入域名解析列表，然后就可以看到刚刚买的域名了，接下来进行解析配置绑定。 2、绑定域名 获取自己博客站点IP 1ping username.githhub.io 进入域名解析列表并对购买的域名进行解析。 解析配置好了以后，登录github，进入到博客站点对应的仓库，对域名进行设置： 到这儿还没结束，在你的本地博客站点路径下的source文件夹里，创建一个名为CNAME的文件（注意要大写无后缀名），里面写上你之前购买的域名。 在这个过程中发现了http和https登录本地及GitHub端存在差异。HTTP与HTTPS的差异GitHub下个人博客域名完美支持https 3、hexo上云 hexo部署到阿里云空间 将hexo部署到云主机 ssh远程登录等等，你以为到这就完了，这也太简单点了吧！这不快过年了吗？作为一个一天不看点教程写点代码写点总结的伪code，总感觉差点什么？这就是事件驱动型，需求出来了，换了电脑怎么写博客。一番baidu、google操作后，大概就是如下几种方法：1、参照如何搭建博客一文在电脑上搭建环境，将以前的博客站点下的source,themes,_config.yml文件复制替换掉新博客的相同文件。2、这个有点复杂呀，设计git的分支知识，我也不是太清楚。3、这个就又上一层楼喽，眼看他起高楼。Hexo版本控制及集成开发我也就按第一种来咯，简单就是一种美呀！其实是其他两种我不会。。。]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git-Usage-Method]]></title>
+    <url>%2F2018%2F02%2F04%2FGit-Usage-Method%2F</url>
+    <content type="text"><![CDATA[学习git使用好久了，好多知识点没用都忘记了。好记忆不如烂笔头，实践才是检验真理的唯一标准。这不，几天前刚学了关于在python中使用OpenCv对图片进行清晰度分辨，正好可以练一下手呀！好在软件有台电脑就可以折腾！废话不多说，开干！！！ 安装git安装及配置git要想使用git必须先下载安装吧！安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！安装完成后，还需要最后一步设置，在命令行输入：12$ git config --global user.name "Your Name"$ git config --global user.email "email@example.com" 创建git版本库什么是版本库呢？版本库又名仓库，英文名repository，你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。所以，创建一个版本库非常简单.首先，选择一个合适的地方，创建一个空目录： 1234$ mkdir learngit$ cd learngit$ pwd #pwd命令用于显示当前目录。/Users/michael/learngit 第二步，通过git init命令把这个目录变成Git可以管理的仓库12$ git init #在目标目录下执行git init将此目录初始化为一个Git仓库。Initialized empty Git repository in /Users/michael/learngit/.git/ 把文件添加到版本库把一个文件放到Git仓库只需要两步第一步，用命令git add告诉Git，把文件添加到仓库：1$ git add readme.txt 第二步，用命令git commit告诉Git，把文件提交到仓库：1234$ git commit -m "wrote a readme file" # -m后面输入的是本次提交的说明[master (root-commit) cb926e7] wrote a readme file 1 file changed, 2 insertions(+) create mode 100644 readme.txt 添加ssh keys世界上有个叫GitHub的神奇的网站，从名字就可以看出，这个网站就是提供Git仓库托管服务的，所以，只要注册一个GitHub账号，就可以免费获得Git远程仓库。 第一步，注册GitHub账号第二步，配置ssh key传输第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有&lt;font color=#0099ff size=4&gt;id_rsa&lt;/font&gt;和&lt;font color=#0099ff size=4&gt;id_rsa.pub&lt;/font&gt;这两个文件， 如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key： 1$ ssh-keygen -t rsa -C "你GitHub上绑定的邮箱" 第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面： 然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容： ![看见我你就输了](Git-Usage-Method/0.png) 点“Add Key”，你就应该看到已经添加的Key： ![看见我你就输了](Git-Usage-Method/1.png) 添加远程仓库及提交首先，登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库：在Repository name填入learngit，其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：现在，我们根据GitHub的提示，在本地的learngit仓库下运行命令(关联仓库)：1$ git remote add origin git@github.com:path/repo-name.git 提示origin存在可git remote rm origin先移除在git下一步，就可以把本地库的所有内容推送到远程库上：123456789$ git push -u origin masterCounting objects: 19, done.Delta compression using up to 4 threads.Compressing objects: 100% (19/19), done.Writing objects: 100% (19/19), 13.73 KiB, done.Total 23 (delta 6), reused 0 (delta 0)To git@github.com:michaelliao/learngit.git * [new branch] master -&gt; masterBranch master set up to track remote branch master from origin. 把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。当GitHub页面中看到远程库的内容已经和本地一模一样后。从现在起，只要本地作了提交，就可以通过命令：1$ git push origin master 现在，你就拥有了真正的分布式版本库！ 开始提交到github提交到github过程中反复出现1Writing object: 50%(8/16), 1.24 MiB | 6.00KiB/s 就一直停滞不前，好不容易到了90%，冒出了fatal: The remote end hung up unexpexted fatal错误开始以为是git环境有问题，网络卡的问题，反复尝试多次，依然不行，在网上找了各种方法，提到过提交内容太大git缓冲区太低的问题，但是自己没有敏锐的察觉问题. 其次要把问题现象截图下来，好分析问题，不至于在后面查找问题的过程中忘记问题本省。在这个问题上浪费了大量时间，真的只有踏过的坑多了才能游刃有余呀！ 总结1、安装及配置git，创建本地仓库git init;git add file.name;git commint -m ‘####’.2、注册GitHub账号及添加SSK keys3、GitHub上创建同名仓库;git remote add origin git@github.com:path/repo-name.git;git push -u origin master;git push origin master。Bash下切换盘符 eg: $ cd f:返回上一级 eg: $ cd .. #cd后面有一个空格]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Jupyer]]></title>
+    <url>%2F2018%2F02%2F04%2FJupyer%2F</url>
+    <content type="text"><![CDATA[Jupyter Notebook（此前被称为 IPython notebook）是一个交互式笔记本，支持运行 40 多种编程语言。Jupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视化和 markdown。用途包括：数据清理和转换，数值模拟，统计建模，机器学习等等。 Windows下的Jupyter Notebook安装与自定义启动我的路径 C:\Users\Administrator.U0MU2MJDDHTGZAL\AppData\Local\Programs\Python\Python35-32\ScriptsJupyter notebook安装及初步使用Jupyter notebook入门教程（上） 1、pip install jupyter 2、&gt;&gt;&gt;jupyter notebook(命令行) 3、配置Jupyter notebook &gt;&gt;&gt;jupyter notebook --generate-config 修改jupyter_notebook_config.py文件 基本单元(cell),cell类型]]></content>
+      <categories>
+        <category>视野</category>
+      </categories>
+      <tags>
+        <tag>厚积薄发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[wechat autojump]]></title>
+    <url>%2F2018%2F02%2F03%2Fautojump%2F</url>
+    <content type="text"><![CDATA[Wechat_AutoJumpTensorflow安装tensorflow,那叫一个坑啊！ 总结，tensorflow的安装： 源码安装，需要面对的问题比较多，但是可以接触到更多的实现上的技术细节，掌握的技术也会多很多。但是，条件不允许的情况下，要学会平衡选择。 python的资源，通过yum或pip，非常容易获取，基于套件的安装，要善于分析日志输出信息，善于利用python的资源。]]></content>
+      <tags>
+        <tag>python example</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[openvc和Python对汪星人图像做模糊检测]]></title>
+    <url>%2F2018%2F02%2F03%2Fopenvc%E5%92%8CPython%E5%AF%B9%E6%B1%AA%E6%98%9F%E4%BA%BA%E5%9B%BE%E5%83%8F%E5%81%9A%E6%A8%A1%E7%B3%8A%E6%A3%80%E6%B5%8B%2F</url>
+    <content type="text"><![CDATA[[Tensorflow]谷歌第二代人工智能学习系统(http://wiki.jikexueyuan.com/project/tensorflow-zh/)哎！人生最痛苦的莫过于在成长过后才认识到自己能够做什么。学好一项技能最好是时刻是有人养你的时候。也许这就是人生的魅力吧！留有遗憾却不断奋斗。任何时代都要善于抓住机会，善用工具。 开始折腾 Windows下Python安装OpenCV详细步骤如何安装python及第三方包安装OpenCV前需安装Numpy当pip命令无效时可下载对应的.whl文件,cd到.whl文件下pip install xx-xx.whl文件即可(注意python版本及系统对应)简介Opencv在Python中的使用123456789101112131415161718192021222324252627282930313233343536373839404142#import the necessary packagesfrom imutils import psthsimport argparseimport cv2def variance_of_laplacian(image): #此函数只接受一个待计算清晰度评价的image参数(假设是单通道图像，例如灰度图)#compute the Laplacian of the image then return the foucs#measure whith is simply the variance of the Laplacian return cv2.Laplaction(image,cv2.CV_64F).var() #对image用3*3拉普拉斯算子做卷积，然后返回方差。 #construct the argument parse and parse the argumentsap = argparse.ArgumentParse()ap.add_argument('-i','--image',required=True,help = 'path to input directory of images')ap.add_argument('-t','--threshold',type=float,default=100.0,help='focus measures that fall below this value will be considered "blurry"')args = vars(ap.parse_args())#loop over the input imagesfor imagePath in paths.list_image(args['images']): #load the image,convert it to grayscale and compute the #foucs measure of the image using the Variance of Laplacian #method image = cv2.imread(magePath) gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY) fm = variance_of_laplacian(gray) text = 'Not Blurry' #if the foucus measure is less than the supplied threshold #then the image should be considered 'blurry' if fm&amp;It;args=['threshold']: text = 'Blurry' #show the image cv2.putText(image,'&#123;&#125;:&#123;:.2f&#125;'.format(text,fm),(10,30), cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,255),3) cv2.imshow('image',image) key = cv2.waitKey(0) 完整项目可点我]]></content>
+      <tags>
+        <tag>python example</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[yield]]></title>
+    <url>%2F2018%2F02%2F01%2Fyield%2F</url>
+    <content type="text"><![CDATA[yieldyield的英文单词意思是生产重要概念 yield表达式，yield表达式参数，yield表达式返回值，next()与send(msg)的返回值 包含yield的函数假如你看到某个函数包含了yield,这意味着这个函数已经是一个Genertor,它的执行会和其他函数有很多不同。123456def h(): print('study yield') yield 5 print('go on!') &gt;&gt;&gt;h() 调用h()后，print语句并没有执行！这就是yield. yield是一个表达式1m = yield 5 yield 5是一个表达式,yield为关键字，5为表达式的参数表达式(yield 5)的返回值将赋值给m，如何获取(yield 5)的返回值，需要用到send(msg). yield工作原理通过next()恢复Generator执行，直到下一个yield；当我们再次调用next()时，会继续执行，直到找到下一个yield。当后面没有yield时，会抛出异常。 send(msg)与next()send()可以传递yield表达式的返回值next()只能传递None所以next()和send(None)作用是一样的 注意生成器刚启动时(第一次调用)，请使用next()语句或是send(None),不能直接发送一个非None的值，否则会报TypeError，因为没有yield语句来接收这个值。 send(msg)与next()的返回值 send(msg)与next()的返回值比较特殊，是下一个yield表达式的参数(yield 5,则返回5)。 1234567891011121314 def s(): print('study yield') m = yield 5 print(m) d = yield 6 print('go on!') &gt;&gt;&gt; c = s()&gt;&gt;&gt;s_d1 = next(c) #相当于send(None)study yield&gt;&gt;&gt;s_d2 = c.send('Fighting!') #yield 5(当前停止的yield表达式)被赋予了'Fighting'Fighting!&gt;&gt;&gt;print('My Birth Day:', s_d1,'.',s_d2)My Birth Day: 5 . 16]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[灵感]]></title>
+    <url>%2F2018%2F01%2F30%2Fchongai%2F</url>
+    <content type="text"><![CDATA[搭建一个宠物选秀网站—-宠爱搭建一个声音搞笑微信小程序–声旺生物结合编程]]></content>
+      <tags>
+        <tag>Light and light</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[实战总结]]></title>
+    <url>%2F2018%2F01%2F24%2F%E5%AE%9E%E6%88%98%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[day-5 关于python中inspect模块的一些探究]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[web]]></title>
+    <url>%2F2018%2F01%2F15%2Fweb%2F</url>
+    <content type="text"><![CDATA[web框架，看来几遍还是不清楚工作流程，还是要看一下大神的解析。Python廖雪峰实战web开发详解WEB端开发 1.编写URL处理函数 1.1 aiohttp编写URL处理函数 第一步，添加协程装饰器 async def handle_url_xxx(request): pass 第二步，对request参数进行操作，以获取相应的参数 url_param = request.math_info[&apos;key&apos;] query_params = parse_qs(requset.query_string) 第三步，构建Response对象并返回 text = rander(&apos;templete&apos;,data) return web.Response(text.encode(&apos;utf-8&apos;)) 1.2新建web框架编写URL处理函数 1.2.1 @get和@post(把一个函数映射为一个&lt;font color=#0099ff size=4&gt;URL处理函数&lt;/font&gt;) 1.2.2 定义RequestHandler(URL处理函数不一定是一个&lt;font color=#0099ff size=4&gt;coroutine&lt;/font&gt;，因此我们用RequestHandler() 来&lt;font color=#0099ff size=4&gt;封装&lt;/font&gt;一个URL处理函数。 最后调用URL函数时，会返回一个APIError的错误，在&lt;font color=#0099ff size=4&gt;day10&lt;/font&gt;) 2、编写add_route函数及add_static函数 2.1 编写add_route函数及批量处理add_routes()函数（用来注册一个URL处理函数，主要起验证函数是否有包含URL的响应方法与路径信息，以及将函数变为协程。） 2.2编写添加静态文件add_static()函数 2.3编写初始化jinja2模板init_jinja2()函数 3、编写middleware #middleware是一种拦截器，一个URL在被某个函数处理前，可以经过一系列的middleware的处理。一个middleware可以改变URL的输入、输出，甚至可以决定不继续处理而直接返回。 middleware的用处就在于把通用的功能从每个URL处理函数中拿出来，集中放到一个地方。 例如，一个记录URL日志的logger可以简单定义如下： ``` @asyncio.coroutine def logger_factory(app, handler): @asyncio.coroutine def logger(request): # 记录日志: logging.info(&apos;Request: %s %s&apos; % (request.method, request.path)) # 继续处理请求: return (yield from handler(request)) return logger ```bash]]></content>
+      <tags>
+        <tag>思路</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[database]]></title>
+    <url>%2F2018%2F01%2F14%2Fdatabase%2F</url>
+    <content type="text"><![CDATA[麻蛋，几日不用hexo都忘记了要先进入blog才能执行hexo语句，看来还是要多做笔记呀！ 数据库突然就连不上了，那就看看是怎么回事呗。数据库安装教程cmd命令行操作数据库python中操作mysql的pymysql模块详解python使用MySQL数据库 启动MYSQL服务：net start mysql停止MYSQL服务：net stop mysql移出mysql服务：mysqld-nt –remove如何执行sql脚本$ mysql -u root -p &lt; schema.sql]]></content>
+      <tags>
+        <tag>厚积薄发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[思考]]></title>
+    <url>%2F2018%2F01%2F01%2F%E6%80%9D%E8%80%83%2F</url>
+    <content type="text"><![CDATA[早上醒来，已经到了2019.1.1，卧槽我已经毕业三年半了，不由的一股焦虑感涌上心头。三年多了，好像也没有什么成就，技能没有提升，依然单身（ps:从来就么有过对象好不）。孤单迷茫依然萦绕在心头，对生活好像总是提不起兴趣。在这一年里，经历了很多，从年初就一路坎坷，走的很慢很累很痛。有时候想大哭一场却又感觉哭不出来。在这段挫败的日子里也有了很多思考，仿佛把前面20多年欠下的思考全都一次性思考完了。回想前面的20多年，好像一直在浑浑噩噩的度过，从来没想过未来，感觉未来离自己很远。突然间未来已来，自己却不知所措，跌跌撞撞走了三年多，不断折腾生活，心累了，好乱不知道到底在干什么。总的来说这一年确定了自己未来的方向，接触了一些新事物（比特币），改变的自己以前的一些偏执想法，更能拥抱新事物了，对一些人和事更包容了。新的一年里也没有什么大的愿望，只是希望家人健康，快乐幸福就好吧。自己也可以早日实现自己的目标。就这样紫了。孩子快醒醒哈哈哈，今天是2018.1.1.我又年轻了一岁。幸福来得就是这么突然。]]></content>
+      <tags>
+        <tag>人生</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[基础概念]]></title>
+    <url>%2F2017%2F12%2F30%2F%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%2F</url>
+    <content type="text"><![CDATA[第三方模块由于Python的字符串类型是str，在内存中以Unicode表示，一个字符对应若干个字节。如果要在网络上传输，或者保存到磁盘上，就需要把str变为以字节为单位的bytes。以Unicode表示的str通过encode()方法可以编码为指定的bytes，例如：在bytes中，无法显示为ASCII字符的字节，用\x##显示。1234&gt;&gt;&gt; 'ABC'.encode('ascii')b'ABC'&gt;&gt;&gt; '中文'.encode('utf-8')b'\xe4\xb8\xad\xe6\x96\x87' 123456789101112131415161718192021222324252627&lt;font color=#0099ff size=4&gt;格式化&lt;/font&gt;最后一个常见的问题是如何输出格式化的字符串。在Python中，采用的格式化方式和C语言是一致的，用%实现默认参数一定要用不可变对象，如果是可变对象，程序运行会存在逻辑错误。def add_end(L=[]): L.append('END') return L 可变参数将传入参数自动封装为一个tuple.&gt;&gt;&gt;args = [1,2,3]&gt;&gt;&gt;calc(*args)14*args表示把args这个list的所有元素作为可变参数传进去。**extra表示把extra这个dict的所有key-value用关键字参数传入到函数的**kw参数，kw将获得一个dict关键字参数将传入参数自动封装为一个dict.命名关键字参数需要一个特殊分隔符*，*后面的参数被视为命名关键字参数。命名关键字参数&lt;font color=#0099ff size=4&gt;必须&lt;/font&gt;传入参数，可变参数和关键字参数可以不传入参数。def person(name,age,*,city='Beijing',job): print(name,age,city,job) &gt;&gt;&gt;person('Jack',24,job='Enginer')Jack 24 Beijing Engineer 在Python中，这种一边循环一边计算的机制，称为生成器：generator。 generator保存的是算法，每次调用next(g)，就计算出g的下一个元素的值，直到计算到最后一个元素，没有更多的元素时，抛出StopIteration的错误。这就是定义generator的另一种方法。如果一个函数定义中包含yield关键字，那么这个函数就不再是一个普通函数，而是一个generator.可以被next()函数调用并不断返回下一个值的对象称为迭代器：Iterator 变量可以指向函数函数名也是变量 1234567891011121314def lazy_sum(*args): def sum(): ax = 0 for n in args: ax = ax + n return ax return sum&gt;&gt;&gt; f = lazy_sum(1, 3, 5, 7, 9)&gt;&gt;&gt; f&lt;function lazy_sum.&lt;locals&gt;.sum at 0x101c6ed90&gt; &gt;&gt;&gt; f()25 我们在函数lazy_sum中又定义了函数sum，并且，内部函数sum可以引用外部函数lazy_sum的参数和局部变量，当lazy_sum返回函数sum时，相关参数和变量都保存在返回的函数中，这种称为“闭包（Closure）”的程序结构拥有极大的威力。 1234567891011121314151617181920def count(): fs = [] for i in range(1, 4): def f(): return i*i fs.append(f) return fsf1, f2, f3 = count()你可能认为调用f1()，f2()和f3()结果应该是1，4，9，但实际结果是：&gt;&gt;&gt; f1()9&gt;&gt;&gt; f2()9&gt;&gt;&gt; f3()9全部都是9！原因就在于返回的函数引用了变量i，但它并非立刻执行。等到3个函数都返回时，它们所引用的变量i已经变成了3，因此最终结果为9 返回闭包时牢记一点：返回函数不要引用任何循环变量，或者后续会发生变化的变量。 Python对匿名函数的支持有限，只有一些简单的情况下可以使用匿名函数。 这种在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。本质上，decorator就是一个返回函数的高阶函数。 作用域类似__xxx__这样的变量是特殊变量，可以被直接引用，但是有特殊用途，比如上面的__author__，__name__就是特殊变量，hello模块定义的文档注释也可以用特殊变量__doc__访问，我们自己的变量一般不要用这种变量名； 类似_xxx和__xxx这样的函数或变量就是非公开的（private），不应该被直接引用，比如_abc，__abc等； 之所以我们说，private函数和变量“不应该”被直接引用，而不是“不能”被直接引用，是因为Python并没有一种方法可以完全限制访问private函数或变量，但是，从编程习惯上不应该引用private函数或变量。1234567891011def _private_1(name): return 'Hello, %s' % namedef _private_2(name): return 'Hi, %s' % namedef greeting(name): if len(name) &gt; 3: return _private_1(name) else: return _private_2(name) 我们在模块里公开greeting()函数，而把内部逻辑用private函数隐藏起来了，这样，调用greeting()函数不用关心内部的private函数细节，这也是一种非常有用的代码封装和抽象的方法，即： 外部不需要引用的函数全部定义成private，只有外部需要引用的函数才定义为public. 面向过程的程序设计把计算机程序视为一系列的命令集合，即一组函数的顺序执行。为了简化程序设计，面向过程把函数继续切分为子函数，即把大块函数通过切割成小块函数来降低系统的复杂度。### 面向对象编程面向对象编程——Object Oriented Programming，简称OOP，是一种程序设计思想。OOP把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。面向对象的程序设计把计算机程序视为一组对象的集合，而每个对象都可以接收其他对象发过来的消息，并处理这些消息，计算机程序的执行就是一系列消息在各个对象之间传递。在Python中，所有数据类型都可以视为对象，当然也可以自定义对象。自定义的对象数据类型就是面向对象中的类（Class）的概念。面向对象设计的程序的执行就是一系列消息在各个对象之间传递。面向对象的设计思想是抽象出Class，根据Class创建Instance.面向对象的抽象程度又比函数要高，因为一个Class既包含数据(Propery)，又包含操作数据的方法(Method)。数据封装、继承和多态是面向对象的三大特点面向对象最重要的概念就是类（Class）和实例（Instance），必须牢记类是抽象的模板在Class内部，可以有属性(Property)和方法(Method)，而外部代码可以通过直接调用实例变量的方法来操作数据，这样，就隐藏了内部的复杂逻辑### 继承和多态这就是著名的“开闭”原则：对扩展开放：允许新增Animal子类；对修改封闭：不需要修改依赖Animal类型的runtwice()等函数。静态语言 vs 动态语言对于静态语言（例如Java）来说，如果需要传入Animal类型，则传入的对象必须是Animal类型或者它的子类，否则，将无法调用run()方法。对于Python这样的动态语言来说，则不一定需要传入Animal类型。我们只需要保证传入的对象有一个run()方法就可以了：123class Timer(object): def run(self): print('Start...')这就是动态语言的“鸭子类型”，它并不要求严格的继承体系，一个对象只要“看起来像鸭子，走起路来像鸭子”，那它就可以被看做是鸭子。Python的“file-like object“就是一种鸭子类型。对真正的文件对象，它有一个read()方法，返回其内容。但是，许多对象，只要有read()方法，都被视为“file-like object“。许多函数接收的参数就是“file-like object“，你不一定要传入真正的文件对象，完全可以传入任何实现了read()方法的对象。### 获取对象信息使用type()type()函数返回的是什么类型呢？它返回对应的Class类型。如果我们要在if语句中判断，就需要比较两个变量的type类型是否相同判断一个对象是否是函数怎么办？可以使用types模块中定义的常量使用isinstance()总是优先使用isinstance()判断类型，可以将指定类型及其子类“一网打尽”。使用dir()仅仅把属性和方法列出来是不够的，配合getattr()、setattr()以及hasattr()，我们可以直接操作一个对象的状态### 类属性12345678910111213141516&gt;&gt;&gt; class Student(object):... name = 'Student'...&gt;&gt;&gt; s = Student() # 创建实例s&gt;&gt;&gt; print(s.name) # 打印name属性，因为实例并没有name属性，所以会继续查找class的name属性Student&gt;&gt;&gt; print(Student.name) # 打印类的name属性Student&gt;&gt;&gt; s.name = 'Michael' # 给实例绑定name属性&gt;&gt;&gt; print(s.name) # 由于实例属性优先级比类属性高，因此，它会屏蔽掉类的name属性Michael&gt;&gt;&gt; print(Student.name) # 但是类属性并未消失，用Student.name仍然可以访问Student&gt;&gt;&gt; del s.name # 如果删除实例的name属性&gt;&gt;&gt; print(s.name) # 再次调用s.name，由于实例的name属性没有找到，类的name属性就显示出来了Student### 使用\_slots__但是，如果我们想要限制实例的属性怎么办？比如，只允许对Student实例添加name和age属性。为了达到限制的目的，Python允许在定义class的时候，定义一个特殊的__slots__变量，来限制该class实例能添加的属性：12class Student(object): __slots__ = ('name', 'age') # 用tuple定义允许绑定的属性名称使用__slots__要注意，__slots__定义的属性仅对当前类实例起作用，对继承的子类是不起作用的：对于类的方法，装饰器一样起作用。Python内置的@property装饰器就是负责把一个方法变成属性调用的：12345678910111213141516171819202122class Student(object): @property def score(self): return self._score @score.setter def score(self, value): if not isinstance(value, int): raise ValueError('score must be an integer!') if value &lt; 0 or value &gt; 100: raise ValueError('score must between 0 ~ 100!') self._score = value &gt;&gt;&gt; s = Student()&gt;&gt;&gt; s.score = 60 # OK，实际转化为s.set_score(60)&gt;&gt;&gt; s.score # OK，实际转化为s.get_score()60&gt;&gt;&gt; s.score = 9999Traceback (most recent call last): ...ValueError: score must between 0 ~ 100!Ostrich除了继承自Bird外，再同时继承Runnable。这种设计通常称之为MixIn。为了更好地看出继承关系，我们把Runnable和Flyable改为RunnableMixIn和FlyableMixIn.Python的class允许定义许多定制方法，可以让我们非常方便地生成特定的类。__str__ __iter__ __getitem__ __getattr__ __call__本节介绍的是最常用的几个定制方法，还有很多可定制的方法，请参考Python的官方文档### 枚举Enum枚举成员，枚举的名称，成员值### 使用元类type()动态语言和静态语言最大的不同，就是函数和类的定义，不是编译时定义的，而是运行时动态创建的。type()函数既可以返回一个对象的类型，又可以创建出新的类型，比如，我们可以通过type()函数创建出Hello类，而无需通过class Hello(object)…的定义：1234567891011&gt;&gt;&gt; def fn(self, name='world'): # 先定义函数... print('Hello, %s.' % name)...&gt;&gt;&gt; Hello = type('Hello', (object,), dict(hello=fn)) # 创建Hello class&gt;&gt;&gt; h = Hello()&gt;&gt;&gt; h.hello()Hello, world.&gt;&gt;&gt; print(type(Hello))&lt;class 'type'&gt;&gt;&gt;&gt; print(type(h))&lt;class '__main__.Hello'&gt;要创建一个class对象，type()函数依次传入3个参数： 1、class的名称； 2、继承的父类集合，注意Python支持多重继承，如果只有一个父类，别忘了tuple的单元素写法； 3、class的方法名称与函数绑定，这里我们把函数fn绑定到方法名hello上。通过type()函数创建的类和直接写class是完全一样的，因为Python解释器遇到class定义时，仅仅是扫描一下class定义的语法，然后调用type()函数创建出class。metaclass我们先看一个简单的例子，这个metaclass可以给我们自定义的MyList增加一个add方法：定义ListMetaclass，按照默认习惯，metaclass的类名总是以Metaclass结尾，以便清楚地表示这是一个metaclass：123456789101112131415161718192021222324252627# metaclass是类的模板，所以必须从`type`类型派生：class ListMetaclass(type): def __new__(cls, name, bases, attrs): attrs['add'] = lambda self, value: self.append(value) return type.__new__(cls, name, bases, attrs) class MyList(list, metaclass=ListMetaclass): pass当我们传入关键字参数metaclass时，魔术就生效了，它指示Python解释器在创建MyList时，要通过ListMetaclass.__new__()来创建，在此，我们可以修改类的定义，比如，加上新的方法，然后，返回修改后的定义。__new__()方法接收到的参数依次是： 1、当前准备创建的类的对象； 2、类的名字； 3、类继承的父类集合； 4、类的方法集合。测试一下MyList是否可以调用add()方法：&gt;&gt;&gt; L = MyList()&gt;&gt;&gt; L.add(1)&gt;&gt; L[1]你不知道的super()事实上，对于你定义的每一个类，Python 会计算出一个方法解析顺序（Method Resolution Order, MRO）列表，它代表了类继承的顺序,我们可以使用下面的方式获得某个类的 MRO 列表：12&gt;&gt;&gt; C.mro() # or C.__mro__ or C().__class__.mro()[__main__.C, __main__.A, __main__.B, __main__.Base, object]super 的工作原理如下：123def super(cls, inst): mro = inst.__class__.mro() return mro[mro.index(cls) + 1]其中，cls 代表类，inst 代表实例，上面的代码做了两件事： 1、获取 inst 的 MRO 列表 2、查找 cls 在当前 MRO 列表中的 index, 并返回它的下一个类，即 mro[index + 1]当你使用 super(cls, inst) 时，Python 会在 inst 的 MRO 列表上搜索 cls 的下一个类。那这个 MRO 列表的顺序是怎么定的呢，它是通过一个 C3 线性化算法来实现的### IO编程input/output是相对于内存来说的。IO编程中，Stream（流）是一个很重要的概念，可以把流想象成一个水管，数据就是水管里的水，但是只能单向流动。Input Stream就是数据从外面（磁盘、网络）流进内存，Output Stream就是数据从内存流到外面去。同步和异步的区别就在于是否等待IO执行的结果异步IO的缺点是编程模型复杂，方法也各不相同，有回调模式和轮询模式。操作IO的能力都是由操作系统提供的，每一种编程语言都会把操作系统提供的低级C接口封装起来方便使用#### 文件读写在Python中，文件读写是通过open()函数打开的文件对象完成的。12with open('/path/to/file', 'r') as f: print(f.read())使用with语句操作文件IO是个好习惯。f = open(‘/Users/michael/gbk.txt’, ‘r’, encoding=’gbk’, errors=’ignore’)### StringIO和BytesIO很多时候，数据读写不一定是文件，也可以在内存中读写。StringIO顾名思义就是在内存中读写str。要把str写入StringIO，我们需要先创建一个StringIO，然后，像文件一样写入即可：12345678910&gt;&gt;&gt; from io import StringIO&gt;&gt;&gt; f = StringIO() #创建文件对象&gt;&gt;&gt; f.write('hello') #执行写命令5&gt;&gt;&gt; f.write(' ')1&gt;&gt;&gt; f.write('world!')6&gt;&gt;&gt; print(f.getvalue())hello world!StringIO操作的只能是str，如果要操作二进制数据，就需要使用BytesIO。BytesIO实现了在内存中读写bytes，我们创建一个BytesIO，然后写入一些bytes：123456&gt;&gt;&gt; from io import BytesIO&gt;&gt;&gt; f = BytesIO()&gt;&gt;&gt; f.write('中文'.encode('utf-8'))6&gt;&gt;&gt; print(f.getvalue())b'\xe4\xb8\xad\xe6\x96\x87'StringIO和BytesIO是在内存中操作str和bytes的方法，使得和读写文件具有一致的接口。#### 操作文件和目录Python的os模块封装了操作系统的目录和文件操作，要注意这些函数有的在os模块中，有的在os.path模块中。操作文件和目录的函数一部分放在os模块中，一部分放在os.path模块中，这一点要注意一下。查看、创建和删除目录可以这么调用：12345678910# 查看当前目录的绝对路径:&gt;&gt;&gt; os.path.abspath('.')'/Users/michael'# 在某个目录下创建一个新目录，首先把新目录的完整路径表示出来:&gt;&gt;&gt; os.path.join('/Users/michael', 'testdir')'/Users/michael/testdir'# 然后创建一个目录:&gt;&gt;&gt; os.mkdir('/Users/michael/testdir')# 删掉一个目录:&gt;&gt;&gt; os.rmdir('/Users/michael/testdir')&gt;&gt;&gt; os.path.split(‘/Users/michael/testdir/file.txt’)(‘/Users/michael/testdir’, ‘file.txt’)这些合并、拆分路径的函数并不要求目录和文件要真实存在，它们只对字符串进行操作。 序列化Python序列化和反序列化序列化与编码我们把变量从内存中变成可存储或传输的过程称之为序列化，在Python中叫pickling，在其他语言中也被称之为serialization，marshalling，flattening等等，都是一个意思。序列化之后，就可以把序列化后的内容写入磁盘，或者通过网络传输到别的机器上。反过来，把变量内容从序列化的对象重新读到内存里称之为反序列化，即unpickling。 Python提供了pickle模块来实现序列化。1234&gt;&gt;&gt; import pickle&gt;&gt;&gt; d = dict(name='Bob', age=20, score=88)&gt;&gt;&gt; pickle.dumps(d)b'\x80\x03&#125;q\x00(X\x03\x00\x00\x00ageq\x01K\x14X\x05\x00\x00\x00scoreq\x02KXX\x04\x00\x00\x00nameq\x03X\x03\x00\x00\x00Bobq\x04u.' JSON更好的方法是序列化为JSON，因为JSON表示出来就是一个字符串，可以被所有语言读取. Python内置的json模块提供了非常完善的Python对象到JSON格式的转换。我们先看看如何把Python对象变成一个JSON：1234&gt;&gt;&gt; import json&gt;&gt;&gt; d = dict(name='Bob', age=20, score=88)&gt;&gt;&gt; json.dumps(d)'&#123;"age": 20, "score": 88, "name": "Bob"&#125;' dumps()方法返回一个str，内容就是标准的JSON。类似的，dump()方法可以直接把JSON写入一个file-like Object。 进程和线程对于操作系统来说，一个任务就是一个进程（Process），比如打开一个浏览器就是启动一个浏览器进程，打开一个记事本就启动了一个记事本进程，打开两个记事本就启动了两个记事本进程，打开一个Word就启动了一个Word进程。 有些进程还不止同时干一件事，比如Word，它可以同时进行打字、拼写检查、打印等事情。在一个进程内部，要同时干多件事，就需要同时运行多个“子任务”，我们把进程内的这些“子任务”称为线程（Thread）。线程是最小的执行单元，而进程由至少一个线程组成。如何调度进程和线程，完全由操作系统决定，程序自己不能决定什么时候执行，执行多长时间。 多进程和多线程的程序涉及到同步、数据共享的问题，编写起来更复杂。 多进程multiprocessing模块提供了一个Process类来代表一个进程对象，下面的例子演示了启动一个子进程并等待其结束：1234567891011121314from multiprocessing import Processimport os# 子进程要执行的代码def run_proc(name): print('Run child process %s (%s)...' % (name, os.getpid()))if __name__=='__main__': print('Parent process %s.' % os.getpid()) p = Process(target=run_proc, args=('test',)) print('Child process will start.') p.start() p.join() print('Child process end.') 执行结果如下：1234Parent process 928.Process will start.Run child process test (929)...Process end. 创建子进程时，只需要传入一个执行函数和函数的参数，创建一个Process实例，用start()方法启动，这样创建进程比fork()还要简单。 join()方法可以等待子进程结束后再继续往下运行，通常用于进程间的同步。 Pool 子进程 进程间通信进程间通信是通过Queue、Pipes等实现的。 一个ThreadLocal变量虽然是全局变量，但每个线程都只能读写自己线程的独立副本，互不干扰。ThreadLocal解决了参数在一个线程中各个函数之间互相传递的问题。ThreadLocal最常用的地方就是为每个线程绑定一个数据库连接，HTTP请求，用户身份信息等，这样一个线程的所有调用到的处理函数都可以非常方便地访问这些资源。 对应到Python语言，单线程的异步编程模型称为协程，有了协程的支持，就可以基于事件驱动编写高效的多任务程序。我们会在后面讨论如何编写协程。 网络通信是两台计算机上的两个进程之间的通信.比如，浏览器进程和新浪服务器上的某个Web服务进程在通信，而QQ进程是和腾讯的某个服务器上的某个进程在通信。 分布式进程在Thread和Process中，应当优选Process，因为Process更稳定，而且，Process可以分布到多台机器上，而Thread最多只能分布到同一台机器的多个CPU上。Python的multiprocessing模块不但支持多进程，其中managers子模块还支持把多进程分布到多台机器上。一个服务进程可以作为调度者，将任务分布到其他多个进程中，依靠网络通信。由于managers模块封装很好，不必了解网络通信的细节，就可以很容易地编写分布式多进程程序。 正则表达式正则表达式是一种用来匹配字符串的强有力的武器。它的设计思想是用一种描述性的语言来给字符串定义一个规则，凡是符合规则的字符串，我们就认为它“匹配”了，否则，该字符串就是不合法的。 break在循环中，break语句可以提前退出循环。例如，本来要循环打印1～100的数字：12345n = 1while n &lt;= 100: print(n) n = n + 1print('END') 上面的代码可以打印出1~100。 如果要提前结束循环，可以用break语句：1234567n = 1while n &lt;= 100: if n &gt; 10: # 当n = 11时，条件满足，执行break语句 break # break语句会结束当前循环 print(n) n = n + 1print('END') 执行上面的代码可以看到，打印出1~10后，紧接着打印END，程序结束。 可见break的作用是提前结束循环。12if not data or data.decode('utf-8')=='exit':#先计算not data是True还是False然后求与 break WSGI了解了HTTP协议和HTML文档，我们其实就明白了一个Web应用的本质就是： 1.浏览器发送一个HTTP请求； 2.服务器收到请求，生成一个HTML文档； 3.服务器把HTML文档作为HTTP响应的Body发送给浏览器； 4.浏览器收到HTTP响应，从HTTP Body取出HTML文档并显示。 如果要动态生成HTML，就需要把上述步骤自己来实现。不过，接受HTTP请求、解析HTTP请求、发送HTTP响应都是苦力活，如果我们自己来写这些底层代码，还没开始写动态HTML呢，就得花个把月去读HTTP规范。 正确的做法是底层代码由专门的服务器软件实现，我们用Python专注于生成HTML文档。因为我们不希望接触到TCP连接、HTTP原始请求和响应格式，所以，需要一个统一的接口，让我们专心用Python编写Web业务。 这个接口就是WSGI：Web Server Gateway Interface。 WSGI接口定义非常简单，它只要求Web开发者实现一个函数，就可以响应HTTP请求。我们来看一个最简单的Web版本的“Hello, web!”：123def application(environ, start_response): start_response('200 OK', [('Content-Type', 'text/html')]) return [b'&lt;h1&gt;Hello, web!&lt;/h1&gt;'] 上面的application()函数就是符合WSGI标准的一个HTTP处理函数，它接收两个参数： environ：一个包含所有HTTP请求信息的dict对象； start_response：一个发送HTTP响应的函数。 在application()函数中，调用：1start_response('200 OK', [('Content-Type', 'text/html')]) 就发送了HTTP响应的Header，注意Header只能发送一次，也就是只能调用一次start_response()函数。start_response()函数接收两个参数，一个是HTTP响应码，一个是一组list表示的HTTP Header，每个Header用一个包含两个str的tuple表示。 通常情况下，都应该把Content-Type头发送给浏览器。其他很多常用的HTTP Header也应该发送。 然后，函数的返回值b’Hello, web!‘将作为HTTP响应的Body发送给浏览器。 有了WSGI，我们关心的就是如何从environ这个dict对象拿到HTTP请求信息，然后构造HTML，通过start_response()发送Header，最后返回Body。 整个application()函数本身没有涉及到任何解析HTTP的部分，也就是说，底层代码不需要我们自己编写，我们只负责在更高层次上考虑如何响应请求就可以了。 不过，等等，这个application()函数怎么调用？如果我们自己调用，两个参数environ和start_response我们没法提供，返回的bytes也没法发给浏览器。 所以application()函数必须由WSGI服务器来调用。有很多符合WSGI规范的服务器，我们可以挑选一个来用。但是现在，我们只想尽快测试一下我们编写的application()函数真的可以把HTML输出到浏览器，所以，要赶紧找一个最简单的WSGI服务器，把我们的Web应用程序跑起来。 好消息是Python内置了一个WSGI服务器，这个模块叫wsgiref，它是用纯Python编写的WSGI服务器的参考实现。所谓“参考实现”是指该实现完全符合WSGI标准，但是不考虑任何运行效率，仅供开发和测试使用。 web 框架除了Flask，常见的Python Web框架还有： Django：全能型Web框架； web.py：一个小巧的Web框架； Bottle：和Flask类似的Web框架； Tornado：Facebook的开源异步Web框架。 当然了，因为开发Python的Web框架也不是什么难事，我们后面也会讲到开发Web框架的内容。 模板使用模板，我们需要预先准备一个HTML文档，这个HTML文档不是普通的HTML，而是嵌入了一些变量和指令，然后，根据我们传入的数据，替换后，得到最终的HTML，发送给用户： 因为协程是一个线程执行，那怎么利用多核CPU呢？最简单的方法是多进程+协程，既充分利用多核，又充分发挥协程的高效率，可获得极高的性能。 asyncio可以实现单线程并发IO操作。如果仅用在客户端，发挥的威力不大。如果把asyncio用在服务器端，例如Web服务器，由于HTTP连接就是IO操作，因此可以用单线程+coroutine实现多用户的高并发支持。]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[decorator]]></title>
+    <url>%2F2017%2F12%2F30%2Fdecorator%2F</url>
+    <content type="text"><![CDATA[函数也是一个对象，而且函数对象可以被赋值给变量，所以，通过变量也能调用该函数。123456&gt;&gt;&gt; def now():... print('2015-3-25')...&gt;&gt;&gt; f = now #now只是指向now()函数并不是调用函数&gt;&gt;&gt; f()2015-3-25 在函数调用前后自动打印日志，但又不希望修改now()函数的定义，增强now()函数的功能，这种在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。本质上，decorator就是一个返回函数的高阶函数。 我们要定义一个能打印日志的decorator，可以定义如下：12345def log(func): def wrapper(*args, **kw): print('call %s():' % func.__name__) return func(*args, **kw) return wrapper 观察上面的log，因为它是一个decorator，所以接受一个函数作为参数，并返回一个函数。我们要借助Python的@语法，把decorator置于函数的定义处：123@logdef now(): print('2015-3-25') 调用now()函数，不仅会运行now()函数本身，还会在运行now()函数前打印一行日志： 123 &gt;&gt;&gt; now() #相当于先执行now=log(now),在运行now()返回函数。call now():2015-3-25 把@log放到now()函数的定义处，相当于执行了语句：now = log(now)由于log()是一个decorator，返回一个函数，所以，原来的now()函数仍然存在，只是现在同名的now变量指向了新的函数，于是调用now()将执行新函数，即在log()函数中返回的wrapper()函数。 wrapper()函数的参数定义是(args, *kw)，因此，wrapper()函数可以接受任意参数的调用。在wrapper()函数内，首先打印日志，再紧接着调用原始函数。]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[返回函数]]></title>
+    <url>%2F2017%2F12%2F27%2F%E8%BF%94%E5%9B%9E%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[返回函数好复杂呀!123456789def count(): fs = [] for i in range(1, 4): def f(): return i*i fs.append(f) return fsf1, f2, f3 = count() 单独执行f1 = count()然后执行f1()竟然会报错，我的天呀，怎么理解！！！ 知乎黄光星 我觉得文中的例子对初学者不太友好，里面同时混杂几个不同的问题。因为涉及问题太多了，我也不期待能够一下说明白，尽力而为。（1）unpack tuple和list, 可以让函数返回多个值1234567def count(): return (1, 2, 3) # 或者 return [1, 2, 3]# 把列表解包，把1 2 3 分别赋值给 a b ca, b, c = count()print a, b, c# 输出 1, 2, 3 （2）假设你知道Python的dict类型。Python中，在函数中定义一个变量的时候，会在一个隐藏的叫locals的dict里面插入key-value，其中key是变量名，value是变量值。而引用一个变量的时候，则首先会在这个叫locals的dict里面，根据变量名作为key，去查对应的值。12var = 1 # 你可以认为这里进行了 locals['var'] = 1 的操作print var # 在对var变量进行求值的时候，就在locals['var']里面找var变量对应的值 （3）for循环中，每次循环只是给 i 重新绑定值12345for i in (1, 2, 3): print iprint i# 一次输入 1 2 3 3 每次for i in (1, 2, 3)相当于在print i之前，进行了locals[&#39;i&#39;] = 1locals[&#39;i&#39;] = 2locals[&#39;i&#39;] = 3的操作所以最后的print i再去locals字典里面找i的时候，就变成 3 了。（4）闭包是 一个函数加上这个函数引用的外部变量123456789101112var = 1def f(): print var# 这里的闭包是函数 f 和 f 引用的外部变量 vardef count(): var2 = 2 def f(): print var2 # 这里的闭包是函数 f 和 f 引用的外部变量 var2 return f 拿第一个函数 f 来说。在 f 运行的时候，解释器拿着’var’这个字符串去locals字典里面找，发现找不到，于是在closure字典里面找，最后closure字典里面找，你可以认为就是找closure[‘var’]，然后发现找到对应的值。count里面的 f 函数同理。（为了容易理解，我这里说谎了。实际上 f 压根没有closure，count里面的 f 才有。其实closure压根不是像locals那样的字典）（5）函数定义时，函数只是记录变量的名字。要区分什么是名字，什么是值。i = 1这里 i 只是名字，只是一个字符串 ‘i’ 。这句话运行完，locals[‘i’] = 1，就说 i 对应的值是1.123456789101112131415161718192021222324def count(): fs = [] for i in range(1, 4): # 定义一个函数，等价于运行了 locals['f'] = 真正生成的函数 # 每次循环，这里都会重新生成一个函数，然后把重新生成的函数赋值给 locals['f'] def f(): return i * i # 引用了'i'这个名字，但并不是引用了'i'对应的值 # 等价于 locals['fs'].append(locals['f']) # f 不是函数，它只是一个名字'f'。f 引用的东西，也就是locals['f']才是真正的函数 fs.append(f) # 于是这个for循环生成了三个函数，这三个函数是没有名字的，这个函数运行完后，它们跟'f'这个名字就毛关系都没有了(是的我说慌了，但可以先不管) # 把整个列表返回，这个列表包含了三个函数 return fs# count()返回三个函数的列表，unpack 列表的语法把列表中的三个函数抽出来，重新给他们命名为 f1, f2, f3# 也就是说，# locals['f1'] = 列表中的第1个函数# locals['f2'] = 列表中的第2个函数# locals['f3'] = 列表中的第3个函数# 这三个函数跟'f'这个名字现在毛关系都没有。（其实是有的，但为了说明需要简化，现在你可以完全不管括号里面说的话）f1, f2, f3 = count()print f1(), f2(), f3()# 好了我们运行它们，输入都是 9 def f(): return i * i这是因为 f1 现在对应的函数，里面引用了 ‘i’ 这个字符串，我们根据 ‘i ‘这个字符串去找它对应的值，先找到 f 当前的locals字典，发现没有，因为函数定义的时候没有定义 i 变量。然后再去closure[‘i’]里面找，因为Python是通过closure字典实现闭包的（就当它是对的好不好），所以我们可以在closure[‘i’]找到值，这个值就是我们上一次运行的时候count函数里面残留的locals[‘i’]，而由于for循环三遍之后，locals[‘i’] == 3，所以找到 i 的值就是3。所以最后输出都是9 小结一个函数可以返回一个计算结果，也可以返回一个函数。 返回一个函数时，牢记该函数并未执行，返回函数中不要引用任何可能会变化的变量。]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用网址]]></title>
+    <url>%2F2017%2F12%2F24%2F%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80%2F</url>
+    <content type="text"><![CDATA[缘起我就是有一个烦恼呀，有时候用过的好的网站喜欢保存下来，这样下次用的时候就不会想不起来了。虽说浏览器可以设置收藏栏，但只能局限于本机。在其他机器上就看不到了。这不，前几天搭建了自己的简易博客，可以通过博客写一篇常用网址，不就可以随时随地的查看了。说干就干！ 常用网址看电影 电影天堂天天影院看天堂BT MOS管原理用法 好的个人网站 廖雪峰崔庆才潘柏信王雨城phodal零尾deep learning我的github肖泰洪资深coder池建强不知道叫什么折腾 好的学习网站 简书知乎玩蛇网牛客网Hexo巴比特sosobtc 问题解决网站 StackOverFlow栈溢出SegmentFaultFunDebug]]></content>
+      <tags>
+        <tag>厚积薄发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[api]]></title>
+    <url>%2F2017%2F12%2F23%2Fapi%2F</url>
+    <content type="text"><![CDATA[API是什么？ 有人会吗？]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[关于如何基于hexo+github搭建自己的博客总结]]></title>
+    <url>%2F2017%2F12%2F23%2F%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E5%9F%BA%E4%BA%8Ehexo-github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[初见一日早上在拥挤的深圳地铁上，人挤人总不能发呆吧！浪费时间是可耻的，总该做点什么不是吗？这不，拿出手机打开微信，订阅号中“hexo+github搭建个人博客（小白篇）”一下吸引了我。啥github?不是最近我玩过的那个吗？不不不！是小白，小白不就是我吗？我是小白，我怕谁。 兄弟不要怂，就是干!!!在度娘的帮助下了解了啥是hexo,经历本地端口4000被占用.PS:为啥就么有人把4000这个常见端口改成其他的，不要让尔等小白一上来就懵逼。 hexo d 无反应，卡了一天多。最终按照这样写的123456# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: git@github.com:luckyki/luckyki.github.io.git branch: master 在解决这些问题的过程中也发现了如下这些优秀博客Litten用github+hexo搭建你的博客潘柏信在他们的博客帮助下终于搭建了自己的第一个博客。点我查看比较简陋，多多理解。这样就完了吗？电影可不是这样结尾的哟！肯定得接着搞事情了更换主题，修改图像，插入图片，写第一篇博文，这不，你看的就是我。后续会跟着大神继续学习，绑定域名，….目前只知道这些了。 Next主题切换hexo.iohexo个人博客切换参照next使用手册Hexo-设置阅读全文leanCloud githubLiveRe 网易邮箱，lbl233]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
