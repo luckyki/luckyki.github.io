@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[docker]]></title>
+    <url>%2F2018%2F02%2F24%2Fdocker%2F</url>
+    <content type="text"><![CDATA[在学习linux的过程中发现了一个好的网站菜鸟教程。初入菜鸟教程结构清晰明了，可以让人对一个新的知识点快速建立框架认知。同时还可以作为平常工作的知识点查阅手册。在逗留的过程中发现了好多新的词汇，不免要了解了解。其中的docker就又为我开起来一个新的知识世界。ddocker一个go语言开发的开源的应用容器引擎，采用沙盒机制。简单点说docker就是能够将应用软件及环境部署在其容器内部生成新的镜像，实现在安装docker的环境中快速部署安装. docker实际应用1、docker下载安装参考教程中的wget -qO- https://get.docker.com/| sh并不能成功安装docker,查找了好多资料后，最终采用apt-get install docker.io才算完成了docker的安装在终端运行执行docker后出现了一系列docker操作参数表明docker安装成功。划重点了如果想今后要以非root用户直接运行docker时，需要执行sudo usermod -aG docker 用户名，将用户添加到docker用户组中。 2、docker使用docker使用流程分为镜像(可下载可自己构建镜像)和容器。 docker构造镜像构造镜像创建新目录进入目录创建Dockfile文件编写Dockfile。Dockerfile由一系列指令(必须为大写字母)和参数组成每条指令都会创建一个新的镜像层并对镜像进行提交。在Dockerfile文件中执行docker build]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[transplant]]></title>
     <url>%2F2018%2F02%2F09%2Ftransplant%2F</url>
     <content type="text"><![CDATA[今天笔记本终于到了,终于可以摆脱老笔记本的开机三分钟了。以前在搭建hexo+github博客时就思考过”如果电脑重装系统或者换电脑了怎么接着写博客”。这不机会折腾的机会就来了，开启搜索之路。在经过漫长的新机装机之路。也是有许多感触的。win10系统较于win7变化还是比较大的，基本操作做了一些改变，添加了Cortana,添加了商店(应该有很多变化吧，滑稽脸目前我只感觉到这些变化)。以前用win7真的只是办公，世界已经在发生翻天覆地的变化，自己却不知，这才是最可怕的吧！混沌前行，突然间就发现世界变了，其实不是世界变了，只是自己在舒适区待久了。要不断尝试新事物，哪怕别人win10目前兼容性还不好，win7办公足矣，但是人生不是只为工作，如果只有成长，没有进步那人生就是在原地踏步。 不断的百度，论坛各种资源的翻阅终于理清了迁移的思路。1、其实和初次搭建博客差不多，只是将以前的score、_config.yml、themes文件替换掉新环境博客目录下的同名问价就行。2、方法1会将GitHub上的提交重新覆盖，会丢失以前的记录。另一种通过分支的思想操作。]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[终于遇见你]]></title>
-    <url>%2F2018%2F02%2F09%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
@@ -27,7 +24,7 @@
   <entry>
     <title><![CDATA[ubuntu]]></title>
     <url>%2F2018%2F02%2F08%2Fubuntu%2F</url>
-    <content type="text"><![CDATA[apt-get，是一条linux命令，适用于deb包管理式的操作系统，主要用于自动从互联网的软件仓库中搜索、安装、升级、卸载软件或操作系统。 vimUbuntu的vim使用在命令行窗口中输入以下命令即可 启动vimvim 直接启动vim vim filename 打开vim并创建名为filename的文件 退出命令:wq 保存并退出 ZZ 保存并退出 :q! 强制退出并忽略所有更改 :e! 放弃所有修改，并打开原来文件 delectcd filerm -r file]]></content>
+    <content type="text"><![CDATA[类Unix系统Linux系统中一切都是文件文件管理系统linux系统启动过程内核的引导运行init系统初始化建立终端用户登录系统 后台 终端 会话 apt-get，是一条linux命令，适用于deb包管理式的操作系统，主要用于自动从互联网的软件仓库中搜索、安装、升级、卸载软件或操作系统。 vimUbuntu的vim使用在命令行窗口中输入以下命令即可 启动vimvim 直接启动vim vim filename 打开vim并创建名为filename的文件 退出命令:wq 保存并退出 ZZ 保存并退出 :q! 强制退出并忽略所有更改 :e! 放弃所有修改，并打开原来文件 delectcd filerm -r filemkdir filetouch filename ctrl+g进入虚拟机ctrl+alt退出虚拟机 ubuntu如何打开终端1、CTRL+ALT+T2、dash主页搜索终端 wintool ubuntu有以下方式切换到root身份。1、sudo+命令，输入当前用户密码后以root权限执行命令，有时间限制且仅限当前命令。 2、sudo -i，输入当前用户密码后以root权限登录shell，无时间限制。使用exit或logout退出。 3、su，输入root账户的密码后切换到root身份，无时间限制。su 用户名切换回其它用户。 4、sudo su，效果同su，只是不需要root的密码，而需要当前用户的密码。 rhel7root;qprootlocaluser:12345 vim显示行号：set nu 显示行号：set nonu 取消显示行号：set nu! 取消显示行号 策略 规则 多个规则合成一个链 控制类型ACCEPT：允许通过LOG:记录日志信息REJECT：拒绝通过，必要时给出提示。DROP：直接放弃 规则链依据处理数据包的位置不同而进行分类PREROUTING:在进行路由选择前处理数据包INPUT:处理入站的数据包OUTPUT:处理出站的数据包FORWARD:处理转发的数据包POSTROUTING:在进行路由选择后处理数据包 Iptables中的规则表是用于容纳规则链raw表：确定是否对该数据进行状态跟踪managle表：为数据包设置标记nat表：修改数据包中的源、目标IP地址或端口filter表：确定是否放行该数据包（过滤） iptables [-t 表名] 选项 [链名] [条件] [-j 控制类型] SNAT源地址转换技术（让多个内网用户通过一个外网地址上网）DNAT目的地址转换技术（让外网IP用户访问局域网内不同的服务器） nmtui]]></content>
       <tags>
         <tag>linux</tag>
       </tags>
@@ -43,7 +40,7 @@
   <entry>
     <title><![CDATA[hexo博客进阶]]></title>
     <url>%2F2018%2F02%2F06%2Fhexo%E5%8D%9A%E5%AE%A2%E8%BF%9B%E9%98%B6%2F</url>
-    <content type="text"><![CDATA[不日前，完成了了blog的搭建，又花了几天更换了next主题参照官方文档完成了主题配置。总感觉每次登陆自己的博客，域名好LOW呀！这不看到了这篇文章,废话不多说开干！ 1、购买域名本篇以阿里云为例 首先注册阿里云账号，如果有淘宝账号的，可以直接登录。 登录以后，先进行实名认证（购买域名要用到 认证信息提交完毕后，可能需要一两天的审核时间。 认证完毕后回到首页，上方导航栏，产品-&gt;点击 万网，搜索自己想要的域名并进行购买（域名持有者选择个人，这里就用到之前的认证）。 购买完毕后，回到首页点击右上方的控制台，进入后点击上方导航栏的产品与服务，然后选择域名，点击进入域名解析列表，然后就可以看到刚刚买的域名了，接下来进行解析配置绑定。 2、绑定域名 获取自己博客站点IP 1ping username.githhub.io 进入域名解析列表并对购买的域名进行解析。 解析配置好了以后，登录github，进入到博客站点对应的仓库，对域名进行设置： 到这儿还没结束，在你的本地博客站点路径下的source文件夹里，创建一个名为CNAME的文件（注意要大写无后缀名），里面写上你之前购买的域名。 在这个过程中发现了http和https登录本地及GitHub端存在差异。HTTP与HTTPS的差异GitHub下个人博客域名完美支持https 3、hexo上云 hexo部署到阿里云空间 将hexo部署到云主机 ssh远程登录等等，你以为到这就完了，这也太简单点了吧！这不快过年了吗？作为一个一天不看点教程写点代码写点总结的伪code，总感觉差点什么？这就是事件驱动型，需求出来了，换了电脑怎么写博客。一番baidu、google操作后，大概就是如下几种方法：1、参照如何搭建博客一文在电脑上搭建环境，将以前的博客站点下的source,themes,_config.yml文件复制替换掉新博客的相同文件。2、这个有点复杂呀，设计git的分支知识，我也不是太清楚。3、这个就又上一层楼喽，眼看他起高楼。Hexo版本控制及集成开发我也就按第一种来咯，简单就是一种美呀！其实是其他两种我不会。。。]]></content>
+    <content type="text"><![CDATA[不日前，完成了了blog的搭建，又花了几天更换了next主题参照官方文档完成了主题配置。总感觉每次登陆自己的博客，域名好LOW呀！这不看到了这篇文章,废话不多说开干！ 1、购买域名本篇以阿里云为例 首先注册阿里云账号，如果有淘宝账号的，可以直接登录。 登录以后，先进行实名认证（购买域名要用到 认证信息提交完毕后，可能需要一两天的审核时间。 认证完毕后回到首页，上方导航栏，产品-&gt;点击 万网，搜索自己想要的域名并进行购买（域名持有者选择个人，这里就用到之前的认证）。 购买完毕后，回到首页点击右上方的控制台，进入后点击上方导航栏的产品与服务，然后选择域名，点击进入域名解析列表，然后就可以看到刚刚买的域名了，接下来进行解析配置绑定。 2、绑定域名 获取自己博客站点IP 1ping username.githhub.io 进入域名解析列表并对购买的域名进行解析。 解析配置好了以后，登录github，进入到博客站点对应的仓库，对域名进行设置： 到这儿还没结束，在你的本地博客站点路径下的source文件夹里，创建一个名为CNAME的文件（注意要大写无后缀名），里面写上你之前购买的域名。 在这个过程中发现了http和https登录本地及GitHub端存在差异。HTTP与HTTPS的差异GitHub下个人博客域名完美支持httpshexo高阶教程 3、hexo上云 hexo部署到阿里云空间 将hexo部署到云主机 ssh远程登录等等，你以为到这就完了，这也太简单点了吧！这不快过年了吗？作为一个一天不看点教程写点代码写点总结的伪code，总感觉差点什么？这就是事件驱动型，需求出来了，换了电脑怎么写博客。一番baidu、google操作后，大概就是如下几种方法：1、参照如何搭建博客一文在电脑上搭建环境，将以前的博客站点下的source,themes,_config.yml文件复制替换掉新博客的相同文件。2、这个有点复杂呀，设计git的分支知识，我也不是太清楚。3、这个就又上一层楼喽，眼看他起高楼。Hexo版本控制及集成开发我也就按第一种来咯，简单就是一种美呀！其实是其他两种我不会。。。]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
@@ -94,7 +91,7 @@
   <entry>
     <title><![CDATA[灵感]]></title>
     <url>%2F2018%2F01%2F30%2Fchongai%2F</url>
-    <content type="text"><![CDATA[搭建一个宠物选秀网站—-宠爱搭建一个声音搞笑微信小程序–声旺生物结合编程]]></content>
+    <content type="text"><![CDATA[搭建一个宠物选秀网站—-宠爱搭建一个声音搞笑微信小程序–声旺生物结合编程租房支付平台]]></content>
       <tags>
         <tag>Light and light</tag>
       </tags>
@@ -158,7 +155,7 @@
   <entry>
     <title><![CDATA[常用网址]]></title>
     <url>%2F2017%2F12%2F24%2F%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80%2F</url>
-    <content type="text"><![CDATA[缘起我就是有一个烦恼呀，有时候用过的好的网站喜欢保存下来，这样下次用的时候就不会想不起来了。虽说浏览器可以设置收藏栏，但只能局限于本机。在其他机器上就看不到了。这不，前几天搭建了自己的简易博客，可以通过博客写一篇常用网址，不就可以随时随地的查看了。说干就干！ 常用网址看电影 电影天堂天天影院看天堂BT MOS管原理用法 好的个人网站 廖雪峰崔庆才潘柏信王雨城phodal零尾deep learning我的github肖泰洪资深coder池建强不知道叫什么折腾 好的学习网站 简书知乎玩蛇网牛客网Hexo巴比特sosobtc 问题解决网站 StackOverFlow栈溢出SegmentFaultFunDebug]]></content>
+    <content type="text"><![CDATA[缘起我就是有一个烦恼呀，有时候用过的好的网站喜欢保存下来，这样下次用的时候就不会想不起来了。虽说浏览器可以设置收藏栏，但只能局限于本机。在其他机器上就看不到了。这不，前几天搭建了自己的简易博客，可以通过博客写一篇常用网址，不就可以随时随地的查看了。说干就干！ 常用网址看电影 电影天堂天天影院看天堂BT MOS管原理用法 好的个人网站 廖雪峰崔庆才潘柏信王雨城phodal零尾deep learning我的github肖泰洪资深coder池建强不知道叫什么折腾一个妹子的博客 好的学习网站 简书知乎玩蛇网牛客网Hexo巴比特sosobtc 问题解决网站 StackOverFlow栈溢出SegmentFaultFunDebug]]></content>
       <tags>
         <tag>厚积薄发</tag>
       </tags>
@@ -172,6 +169,14 @@
     <title><![CDATA[关于如何基于hexo+github搭建自己的博客总结]]></title>
     <url>%2F2017%2F12%2F23%2F%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E5%9F%BA%E4%BA%8Ehexo-github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93%2F</url>
     <content type="text"><![CDATA[初见一日早上在拥挤的深圳地铁上，人挤人总不能发呆吧！浪费时间是可耻的，总该做点什么不是吗？这不，拿出手机打开微信，订阅号中“hexo+github搭建个人博客（小白篇）”一下吸引了我。啥github?不是最近我玩过的那个吗？不不不！是小白，小白不就是我吗？我是小白，我怕谁。 兄弟不要怂，就是干!!!在度娘的帮助下了解了啥是hexo,经历本地端口4000被占用.PS:为啥就么有人把4000这个常见端口改成其他的，不要让尔等小白一上来就懵逼。 hexo d 无反应，卡了一天多。最终按照这样写的123456# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: git@github.com:luckyki/luckyki.github.io.git branch: master 在解决这些问题的过程中也发现了如下这些优秀博客Litten用github+hexo搭建你的博客潘柏信在他们的博客帮助下终于搭建了自己的第一个博客。点我查看比较简陋，多多理解。这样就完了吗？电影可不是这样结尾的哟！肯定得接着搞事情了更换主题，修改图像，插入图片，写第一篇博文，这不，你看的就是我。后续会跟着大神继续学习，绑定域名，….目前只知道这些了。 Next主题切换hexo.iohexo个人博客切换参照next使用手册Hexo-设置阅读全文leanCloud githubLiveRe 网易邮箱，lbl233]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[终于遇见你]]></title>
+    <url>%2F2015%2F06%2F01%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
