@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[影翼杀手观后感]]></title>
+    <url>%2F2018%2F02%2F26%2F%E5%BD%B1%E7%BF%BC%E6%9D%80%E6%89%8B%E8%A7%82%E5%90%8E%E6%84%9F%2F</url>
+    <content type="text"><![CDATA[银翼杀手作为一部1982年上映的科幻片，影片以2019年的洛杉矶作为故事背景。现在(2018年)看来依然很超前，我们在2019年还是普及不了片中的高科技(语音操作，空中飞车，生物科技)。这部片子在当时那个科技开始普及的时代已经超前的那个时代太多，民众的科技素养欠缺的阶段意识难以接受。在计算机科技时代我们经历的太多的变迁。于我以前看电影只是看的热闹，现在看电影更多的看到是电影的内涵及给人的启示与思考。一本好多书籍、好多科技电影、好多音乐真的会改变一个人的未来、思维的深度、人生成就。只是我们以前太年轻，缺少正确的引导。很多次改变的机会都于我们擦肩而过，自己却不自知，缺少引导不可怕，可怕的是引向了歧路。经历了饥饿到温饱，战争到和平，落后到小康。未来一定是科技与生命的思考，必将掀起一场生物开科技的革命。]]></content>
+      <tags>
+        <tag>观后感</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[docker制作hexo镜像]]></title>
     <url>%2F2018%2F02%2F25%2Fdocker%E5%88%B6%E4%BD%9Chexo%E9%95%9C%E5%83%8F%2F</url>
     <content type="text"><![CDATA[学习docker已经有几日了，看来那末多教程，总想实践一把，毕竟实践才是检验真理的唯一标准嘛。 参考了下面的一些操作。使用hexo+github搭建个人博客使用Hexo+Github+Ubuntu搭建博客Ubuntu平台下通过Hexo在Github上搭建个人博客使用dock制作hexo镜像使用docker和hexo搭建DevOps个人静态博客 思路和window下是一样的。1、安装git,nodejs.2、安装hexo.(在这里遇到了两个坑，一个时执行npm install hexo时提示没有npm;第二个是执行hexo init提示/usr/bin/env: ‘node’: No such file or directory可参考软链接) 实际操作过程1、虚拟机下安装docker2、下载ubuntu 14.04镜像执行docker run -it ubunut:14.04 /bin/bash apf-get update 后docker commit -m=”update apt-get” -a=”qinp” 容器id ubuntu14.04/hexo：版本号3、docker run 新镜像ubuntu14.04/hexo,安装git,nodejs,hexo.]]></content>
@@ -160,7 +168,7 @@
   <entry>
     <title><![CDATA[常用网址]]></title>
     <url>%2F2017%2F12%2F24%2F%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80%2F</url>
-    <content type="text"><![CDATA[缘起我就是有一个烦恼呀，有时候用过的好的网站喜欢保存下来，这样下次用的时候就不会想不起来了。虽说浏览器可以设置收藏栏，但只能局限于本机。在其他机器上就看不到了。这不，前几天搭建了自己的简易博客，可以通过博客写一篇常用网址，不就可以随时随地的查看了。说干就干！ 常用网址看电影 电影天堂天天影院看天堂BT MOS管原理用法 好的个人网站 廖雪峰崔庆才潘柏信王雨城phodal零尾deep learning我的github肖泰洪资深coder池建强不知道叫什么折腾一个妹子的博客 好的学习网站 简书知乎玩蛇网牛客网Hexo巴比特sosobtc 问题解决网站 StackOverFlow栈溢出SegmentFaultFunDebug]]></content>
+    <content type="text"><![CDATA[缘起我就是有一个烦恼呀，有时候用过的好的网站喜欢保存下来，这样下次用的时候就不会想不起来了。虽说浏览器可以设置收藏栏，但只能局限于本机。在其他机器上就看不到了。这不，前几天搭建了自己的简易博客，可以通过博客写一篇常用网址，不就可以随时随地的查看了。说干就干！ 常用网址看电影 电影天堂天天影院看天堂BT MOS管原理用法 好的个人网站 廖雪峰崔庆才潘柏信王雨城林夕水共phodal零尾deep learning我的github肖泰洪资深coder池建强不知道叫什么折腾一个妹子的博客 好的学习网站 简书知乎玩蛇网牛客网Hexo巴比特sosobtc 问题解决网站 StackOverFlow栈溢出SegmentFaultFunDebug]]></content>
       <tags>
         <tag>厚积薄发</tag>
       </tags>
