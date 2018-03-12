@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[annconda]]></title>
+    <url>%2F2018%2F03%2F12%2Fanaconda%2F</url>
+    <content type="text"><![CDATA[一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda1、下载对应版本 清华镜像 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题—安装Anaconda之前已经安装python3.怎么解决 Ubuntu下安装Anaconda]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[algorithm]]></title>
+    <url>%2F2018%2F03%2F11%2Falgorithm%2F</url>
+    <content type="text"><![CDATA[初识算法算法就是你解决问题的方法。 时间复杂度与空间复杂度 关于时间复杂度的详解 常见的时间复杂度有： 常数阶O(1)&lt;对数阶O(log2n)&lt;线性阶O(n),&lt;线性对数阶O(nlog2n) &lt;平方阶O(n^2)&lt;方阶O(n3)&lt;k次方阶O(n^k) &lt;指数阶O(2^n)&lt;O(n!)&lt;O(n^n) 时间复杂度计算步骤： 1、找到执行次数最多的语句 2、计算语句执行次数的数量级 3、用打 O来表示结果]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[asyncio]]></title>
+    <url>%2F2018%2F03%2F11%2Fasyncio%2F</url>
+    <content type="text"><![CDATA[为了解决CPU高速执行能力和IO设备的龟速严重不匹配，一个IO操作就阻塞了当前线程问题。通过多线程和多进程实现并发；另一种解决IO问题的方法是异步IO。 同步IO模型的代码是无法实现异步IO模型的。 异步IO模型需要一个消息循环，在消息循环中，主线程不断地重复“读取消息-处理消息”这一过程： 消息模型是如何解决同步IO必须等待IO操作这一问题的呢？当遇到IO操作时，代码只负责发出IO请求，不等待IO结果，然后直接结束本轮消息处理，进入下一轮消息处理过程。当IO操作完成后，将收到一条“IO完成”的消息，处理该消息时就可以直接获取IO操作结果。 协程，又称微线程，纤程。英文名Coroutine。 协程的调用和子程序区别： 子程序调用总是一个入口，一次返回，调用顺序是明确的。 协程看上去也是子程序，但执行过程中，在子程序内部可中断（类似CPU中断），然后转而执行别的子程序，在适当的时候再返回来接着执行。 协程的特点在于是一个线程执行。 协程最大的优势是极高的执行效率。因为子程序切换不是线程切换，而是由程序自身控制。 Python对协程的支持是通过generator实现的。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[SQLAlchemy]]></title>
+    <url>%2F2018%2F03%2F10%2Fpython-SQLAlchemy%2F</url>
+    <content type="text"><![CDATA[ORM技术：Object-Relational Mapping，把关系数据库的表结构映射到对象上。 创建一个class对象表示数据库的一个表，用class实例表示表中的一行数据。 Python中，最有名的ORM框架是SQLAlchemy。我们来看看SQLAlchemy的用法。 123456789101112131415161718192021222324252627282930#导入SQLAlchemy,并初始化DB session：from sqlalchemy import Column,String,create_enginefrom sqlalchemy.orm import sessionmakerfrom sqlalchemy.ext.declarative import declarative_base#创建对象基类：Base = declarative_base()#定义User对象：class User(Base): #表的名字： __tablename__ = 'user' #表的结构： id = Column(String(20),primary_key=True) name = Column(String(20)) #初始化数据库连接：engine = create_engine('mysql+pymysql://root:password@localhost:3306/test')#创建DBSession类型：DBSession = sessionmaker(bind=engine)#创建session对象：session = DBSession()#创建新User对象：new_user = User(id='5',name='bob')#添加到session:session.add(new_user)#提交即保存到数据库:session.commit()#关闭session:session.close()]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python SQLite]]></title>
+    <url>%2F2018%2F03%2F10%2Fpython-SQLite%2F</url>
+    <content type="text"><![CDATA[SQLite是一种嵌入式数据库，它的数据库就是一个文件。 操作关系数据库，首先要连接到数据库，一个数据库连接称为Connection; 连接到数据库后，需要打开游标，称之为Cursor,通过Cursor执行SQL语句，然后，获得结果。 12345678910111213141516171819202122232425262728#导入SQLite驱动import sqlite3#连接到SQlite数据库#数据库文件时test.db,如果文件不存在，会自动在当前目录创建：conn = sqlite3.connect('test1.db')#创建一个Cursor:cursor = conn.cursor()#执行一条SQL语句，创建user表：cursor.execute('create table user (id varchar(20) primary key,name varchar(20))')#执行一条SQL语句，插入一条记录：cursor.execute('insert into user (id,name) values (\'1\',\'michal\')')#通过rowcount查询插入行数：cursor.rowcount#关闭cursorcursor.close()#提交事务：conn.commit()#关闭Coonection:conn.close()#查询记录：conn = sqlite3.connect('test1.db')cursor = conn.cursor()cursor.execute('select * from user where id = ?',('1',)) #注意此处的''范围，不同于createvalues = cursor.fetchall()print(values)cursor.close()conn.close() sqlite3连接数据库时如果文件已经存在汇报错，需删除当前目录下xx.db文件，然后重新执行。]]></content>
+      <tags>
+        <tag>database</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python下TCP编程]]></title>
+    <url>%2F2018%2F03%2F10%2FTCP-IP%2F</url>
+    <content type="text"><![CDATA[网络编程网络编程就是如何在程序中实现两台计算机的通信.也即两个进程之间的通信。 TCP/IP简介因为互联网协议包含了上百种协议标准，但是最重要的两个协议是TCP和IP协议，所以，大家把互联网的协议简称TCP/IP协议。 IP协议负责把数据从一台计算机通过网络发送到另一台计算机。数据被分割成一小块一小块，然后通过IP包发送出去。由于互联网链路复杂，两台计算机之间经常有多条线路，因此，路由器就负责决定如何把一个IP包转发出去。IP包的特点是按块发送，途径多个路由，但不保证能到达，也不保证顺序到达。 TCP协议则是建立在IP协议之上的。TCP协议负责在两台计算机之间建立可靠连接，保证数据包按顺序到达。TCP协议会通过握手建立连接，然后，对每个IP包编号，确保对方按顺序收到，如果包丢掉了，就自动重发。 什么是TCP/IP协议 TCP编程Socket(套接字)是网络编程的一个抽象概念。通常我们用一个Socket表示“打开了一个网络链接”，而打开一个Socket需要知道目标计算机的IP地址和端口号，再指定协议类型即可。 1234567891011121314151617181920212223242526#导入socket库：import socket#创建一个socket对象:s = socket.socket(socket.AF_INET,socket.SOCK_STREAM) #AF_INET指IPV4协议，SOCK_STREAM指面向流的TCP协议#建立连接:s.connect(('www.sina.com.cn',80))#发送数据：s.send(b'GET / HTTP/1.1\r\nHost:www.sina.com.cn\r\nConnection:close\r\n\r\n')#接受数据：buffer = []while True: d = s.recv(1024) if d: buffer.append(d) else: breakdata = b''.join(buffer)#关闭连接：s.close()#数据处理header, html = data.split(b'\r\n\r\n',1)print(header.decode('utf-8'))#把接收的数据写入文件：with open('sina.html','wb') as f: f.write(html) 知识点补充URL统一资源定位。我们可以这样认为：一个URL地址，它用于描述一个网络上的资源。 HTTP中GET,POST,PUT,DELETE就对应这个资源的查，改，增，删4个操作。 响应代码释义： ​ 200 表示成功。 ​ 3xx 表示重定向。 ​ 4xx 表示客户端发送的请求有错误。 ​ 5xx 表示服务端处理时发生错误。]]></content>
+      <tags>
+        <tag>python network</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[汉尼拔]]></title>
     <url>%2F2018%2F02%2F28%2F%E6%B1%89%E5%B0%BC%E6%8B%94%2F</url>
     <content type="text"><![CDATA[汉尼拔·莱克特^注释是欧洲贵族，他的家庭毁于一场战乱，然而，贵族的血脉不是那么容易灭绝的，所以身边的父母家人全部去世以后，汉尼拔可以逃跑到法国的姨妈家，接受最好的教育。要知道，在那个年代，医学可是非常吃香的，供一个小孩无忧无虑读书到毕业，说明这个家族还是可以的。 所以一开始汉尼拔就不是什么屌丝逆袭，这样一个像浮士德一样的人物，是出身名门的。只不过，他的聪明敏锐以及从小的经历，让他明白了人性本恶的道理，使他在未来成为了一个玩世不恭的，挑战现行社会制度和人类社会约定俗成的法则的“犯罪分子”，用自己的智商和犯罪手段，来讽刺这个社会。 汉尼拔学的是医学和心理学，为什么不安排他学核物理，最后成为钢铁侠？学化学，最后成为绿巨人？学生物学，最后成为蜘蛛侠？为什么偏偏是医学加心理学？ 是的，作者要他来全面修理西方文明中那些罪恶的身心。 《汉尼拔崛起》讲了这么样一个故事，一群中欧的匪兵，在天下大乱的时候，做了外敌， 纳粹军队的走狗，帮助他们屠杀同胞，当苏军取得压倒性胜利的时候，他们又趁火打劫叛变粹， 成了抵抗外敌的英雄，在大雪封山的时候，他们吃了汉尼拔的妹妹，在战争结束后，他们又摇身一变，成为了英雄，士绅，官员，成为了当时那个社会的中流砥柱。 在这里，妹妹是一个象征，是汉尼拔儿时心中最美好的东西，最希望呵护和捍卫的东西，这个象征就被人当着汉尼拔的面扒光了煮来吃了，关键是，为了生存，汉尼拔自己也吃了…..然后这个BUG将伴随他一生。 当今社会谁又没有类似的体验呢? 这个妹妹可以是上天赐予你的土地，还有这上面的物产。有一天，一群匪徒杀进你的家，拿枪抵着你的头，告诉你，这一切都要由他们来分配，于是，他们吃了大头，你吃了一点残羹，勉强维持生存。 然而谁计较过他们？谁惩罚过他们？没有人。这个世界就是个成王败寇的世界。你活下来了，你有钱，你赢了，那么你说了算。你曾经为了活下来，为了胜利做的一切，没有人计较，没有人可以计较。这就是现实。 然而，拔叔计较，拔叔出来了，把他们都煮来吃了，所以这样的情节很反动，说得太直接、太现实、太血淋淋了。 拔叔本来是和妹妹在自己花园里捞鱼，想无忧无虑地安安静静地长大的美男子，是一场什么样的战争，毁灭了他的生活？是一场资本主义狗咬狗的争夺霸权的战争，尤其又是在战争末期，是苏联和英美联军之间打残兵抢地盘如吃豆一般展开竞赛的时候，在这场人类历史上最大的浩劫的尾声里，汉尼拔失去了自己的父母，和自己最心爱的妹妹。所以，对于它来讲，这个世界上那些强权所伸张的正义，就是它们作威作福，祸乱人间的遮羞布而已。 接下来，拔叔流蹿到了美国，没想到美国也是一样的。 我们来到《红龙》，在这里，汉尼拔是美国FBI，警察的座上宾， 要不是因为小茶杯天赋秉异，可能没有人能发现他竟然是那么顽皮。请注意，在原著中，小茶杯是凭借敏锐直觉偶然发现汉尼拔的蛛丝马迹的，他去汉尼拔家，是为了获得汉尼拔的帮助，来破获另外一个案件。这讽刺什么，讽刺美帝所谓的法制、科技、侦查技术的平均水平烂得掉渣，只唬得住小屁孩，对于精英和杂碎这两个极端根本就形同虚设。 说明我们生存的世界漏洞百出，居然要靠超级英雄和天才儿童来维护，说明那些西装革履，循规蹈矩的官僚们愚蠢之极，形同虚设。 接下来来到《沉默的羔羊》。资本主义社会造就了野牛比尔这样的变态狂，杀了那么多人，做了那么多恶，这个社会在乎吗？不在乎。那些变成了一张张人皮的鲜活生命，只不过就是FBI失踪人口调查文件上的一个数字！直到议员的女儿被绑架了，警察才开始打鸡血。这是什么？这是属于权贵，属于统治阶级的社会。法制？平等？正义？算了吧，当汉尼拔在调侃议员咪咪的时候，简直就是对这个社会的“正义的游戏规则”最大的讽刺——一个议员，为了救自己的女儿，求助于罪犯，最后玩脱了，罪犯跑了，这就是剧情。为什么议员就可以坏规矩呢？如果是隔壁老王的女儿被水牛比尔绑架了，有没有人管呢？如果不是出生平民的克拉丽丝探员冒险坚持，最后又救不救得出人质呢？ 最精彩的当属《人魔》，简直就是画龙点睛，小说的结局是，当克拉丽丝发现她所为之奋斗终身的体制本质上就是邪恶的的时候，在汉尼拔的点化和帮助下，把这个体制的代言人克伦德勒的大脑吃掉了，然后神仙眷侣携手私奔——多么地解恨！ 电影就温和多了，为了审核通过，还是保留了克拉丽丝正义的形象，一直在反抗，导致汉尼拔英雄断臂。这个改编其实非常之失败，比较原著的思想精髓真是大为失色。但是没有办法，因为在新闻界混了几十年的狡猾的托马斯·哈里斯老爷子这一下真的捅到了这个社会的最见不得人的菊花，衣冠禽兽们道貌岸然地站出来告诉他：“是这个理，但是你娃不要说这么透好不好？” 即使这样，作品要表达的核心思想是没变的——在某些时期，某些社会结构下，上流的人最下流，下流的人不择手段上位成功就成为了统治阶级，而统治阶级的利益大于一切，他们是一切罪恶的始作俑者，都该受到审判而没有受到审判。 最后只有YY，只有让一个”神“来吃掉你们这些猪腰子牛胰脏一样的烂杂碎。梅森、克伦德勒这些杂碎操纵着这个国家的司法、刑侦、舆论，甚至正义的价值观，什么克劳福德、克拉丽丝这些稍微有点正义感的公务员，只不过是背黑锅的。他们很无力。小说中鱼市后一章停职克拉丽丝的时候，专门描述了克劳福德老头子，他本来要保护自己的部下，结果被支到图书馆去喝茶，最后竟然在那里心脏病发作。 克拉丽丝选择的是在体制内，用自己的努力来改变这个体制，最后的结果是，作为一个平民，他只不过是一个棋子而已，最后竟然连守住自己名誉和尊的基本底线都无法做到。汉尼拔是在体制外的，用自己的暴力来改变这个体制，最后的结果是理想化的，因为在现实里，这样的人最终会分化为两种——革命者和犯罪分子，王和寇。作者让汉尼拔成为了隐藏在市井之中的革命者，这简直就是浪漫主义，因为在当今社会，互联网时代，敢这么嚣张的人，是不存在的。 更加升华一层，汉尼拔更是代表了一个阶级——知识分子阶级，甚至可以代替一类人——犹太人的处境。越是落后的社会越是被流氓统治的，他们通过家族世袭或者暴力巧取豪夺了政权，但是维护一个政权，那些只会暴力的纨绔子弟是搞不定的，他们需要在有法理的情况下努力薅羊毛，一般情况下都是少精英剥削多数傻x。 统治阶级薅穷苦大众的羊毛，如果薅厉害了，穷苦大众就会揭竿而起，推翻统治阶级，如果不薅，庞大的国家机器又难以运行，因此为了合理化自己的统治与剥削，最需要知识分子来贡献薅羊毛的方法和迷惑群羊的说辞。知识分子是不具备土地、资本、手艺、甚至劳动力的一个阶层，他们有的生产要素是知识，他们必须依靠自己的知识去寻租，《汉尼拔》电视剧最突出的就是，拥有大量资源，代表统治阶层的探员拜访幼年时就失去了土地和资本，仅仅拥有知识和手艺的汉尼拔，向他请教，取得经验和灵感。 拥有知识的阶层最看得清楚这个社会得问题和本质，说出口的大多都是令人折服的真理，他们是最厉害的一个阶层，也是防御力最低的一个阶层，相当于大法师只能放魔法，砍人就不行了。因此无论是哪个国家，知识分子对于统治阶层来说，是最重要的谋士，也是最危险，随时需要被提防的，古有秦始皇焚书坑儒，今有纳粹迫害犹太科学家。从一定角度上来说，知识分子就像犹太人一样，一群地痞流氓需要用你的时候，就薅羊毛，不需要的时候，就送集中营。 汉尼拔作为一个高级知识分子，他完全是反传统反结构的，他没有成为一只小绵羊任人宰割，而是成为了狡猾的老狐狸，用自己的知识和经验在改造统治阶级。这一点，也很像对今天犹太人的隐喻，如今美国社会前200的精英，大多数是那些曾经受到各种利用、迫害、排挤、流离失所，四处流浪的犹太人。 最后作品告诉我们什么呢？ 我们生活在一个罪恶的，成王败寇的世界。那些高高在上的人，他们因为血脉的缘故高高在上，他们以及他们的家族制定了法律，制定了规矩来约束芸芸众生，自己却在大庄园里玩papa，割脸，在办公室里调戏下属。那些理想化的人，被这个体制物化的人，希望成为忠犬，迫切希望改变自己的阶级，或者得到体制的接纳和认可，然而，自己只不过是随时可以牺牲掉的工具而已。那些和体制作对的人，分为有意识的和无意识的，水牛比尔，红龙都是无意识的，自己玩得HIGH的小朋友，都是因为触及了体制（一个是得罪了议员，一个是得罪了FBI)，然后很快就被搞掉了。而汉尼拔这种了解体制，智商又超越凡人，并且有意识的坏蛋，体制拿他是一点办法都没有，有时候，还一起同流合污（喝茶吃饭）。 这本书的前3/4是反人类的，是在教人用暴力反抗强权，用血来浇灌自由，这本书是在教人做世界上最危险的事——GM，推翻一个旧的世界，创造一个新的世界。然而，这本书之所以能够被推广，第一，因为它诞生于相对民主的资本主义国家，诞生在美帝，可以作为一种对现行制度漏洞和社会问题的批判和讽刺而存在。第二，作者没有将反动的思想推而广之，拔叔和克拉丽丝最后解放的是自己，而不是这个社会，他们最后隐了，两个人跑到美国法律干涉不到的地方去过神仙日子了，而没有傻不拉几的去白宫讨个公道正义什么的，因为他们知道，没有公道和正义，他们的智商和能力再高，也只能勉强碰运气搞定个别人，而面对国家机器，一定是分分钟被消灭。第三，正义最终战胜了邪恶，这里给大家一个彩蛋，你们可能觉得在汉尼拔系列里，克拉丽丝就是一个花瓶，拔叔才是最牛逼的，吃遍天下。 你们错了，说了多少次了，要看原著! 最后一部分，克拉丽丝像妈妈一样把拔叔治了，拔叔吸了奶，就再也不瞎折腾了—— “……她的眼睛和耳坠在火光里闪耀。火光边有一声叹息，炉火的温暖透进了她的晚礼服。史达琳心里闪过一个瞬息即逝的回忆——很久以前莱克特博士问过马丁参议员，她是否给她的女儿哺乳。一个闪着珠宝光芒的动作在史达琳不自然的平静里翻腾：瞬息之间她心灵的窗户开启了好几扇，让她远远望出了自己的经历以外。 她说：“汉尼拔·莱克特，你妈妈喂你奶吗？” “喂的。” “你有过非把Rx房放弃给米沙不可的感觉吗？你曾经觉得非放弃给她不可吗？” 好一会儿。“我想不起来，克拉丽丝。如果我放弃了的话，也是高高兴兴地放弃了的。”克拉丽丝·史达琳将手拢成杯状伸进她长袍领口的深处，把Rx房解放了出来。“这个Rx房你就不用放弃了。”她说。她一直望着他的眼睛，用扣扳机的指头从唇边拿开了温暖的依甘堡酒。一滴香而浓的酒挂到她乳头上，像一枚金色的耳坠，在随着她的呼吸颤动。 他飞速离开椅子向她跑去，在她的椅前一条腿跪下，向那珊瑚红与奶油白俯过身去；他那帅气黑亮的头映着火光。”引自《汉尼拔》第六部 长勺 第一百零一章作者：托马斯·哈里斯]]></content>
+      <tags>
+        <tag>movie</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[ububtu14.04下搭建以太坊私有链开发环境]]></title>
@@ -15,18 +54,24 @@
     <url>%2F2018%2F02%2F26%2F%E5%BD%B1%E7%BF%BC%E6%9D%80%E6%89%8B%E8%A7%82%E5%90%8E%E6%84%9F%2F</url>
     <content type="text"><![CDATA[银翼杀手作为一部1982年上映的科幻片，影片以2019年的洛杉矶作为故事背景。现在(2018年)看来依然很超前，我们在2019年还是普及不了片中的高科技(语音操作，空中飞车，生物科技)。这部片子在当时那个科技开始普及的时代已经超前的那个时代太多，民众的科技素养欠缺的阶段意识难以接受。在计算机科技时代我们经历的太多的变迁。于我以前看电影只是看的热闹，现在看电影更多的看到是电影的内涵及给人的启示与思考。一本好多书籍、好多科技电影、好多音乐真的会改变一个人的未来、思维的深度、人生成就。只是我们以前太年轻，缺少正确的引导。很多次改变的机会都于我们擦肩而过，自己却不自知，缺少引导不可怕，可怕的是引向了歧路。经历了饥饿到温饱，战争到和平，落后到小康。未来一定是科技与生命的思考，必将掀起一场生物开科技的革命。我的记忆，是真实的吗？]]></content>
       <tags>
-        <tag>观后感</tag>
+        <tag>movie</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[docker制作hexo镜像]]></title>
     <url>%2F2018%2F02%2F25%2Fdocker%E5%88%B6%E4%BD%9Chexo%E9%95%9C%E5%83%8F%2F</url>
     <content type="text"><![CDATA[学习docker已经有几日了，看来那末多教程，总想实践一把，毕竟实践才是检验真理的唯一标准嘛。 参考了下面的一些操作。使用hexo+github搭建个人博客使用Hexo+Github+Ubuntu搭建博客Ubuntu平台下通过Hexo在Github上搭建个人博客使用dock制作hexo镜像使用docker和hexo搭建DevOps个人静态博客 思路和window下是一样的。1、安装git,nodejs.2、安装hexo.(在这里遇到了两个坑，一个时执行npm install hexo时提示没有npm;第二个是执行hexo init提示/usr/bin/env: ‘node’: No such file or directory可参考软链接) 实际操作过程1、虚拟机下安装docker2、下载ubuntu 14.04镜像执行docker run -it ubunut:14.04 /bin/bash apf-get update 后docker commit -m=”update apt-get” -a=”qinp” 容器id ubuntu14.04/hexo：版本号3、docker run 新镜像ubuntu14.04/hexo,安装git,nodejs,hexo.]]></content>
+      <tags>
+        <tag>docker</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[docker]]></title>
     <url>%2F2018%2F02%2F24%2Fdocker%2F</url>
     <content type="text"><![CDATA[在学习linux的过程中发现了一个好的网站菜鸟教程。初入菜鸟教程结构清晰明了，可以让人对一个新的知识点快速建立框架认知。同时还可以作为平常工作的知识点查阅手册。在逗留的过程中发现了好多新的词汇，不免要了解了解。其中的docker就又为我开起来一个新的知识世界。ddocker一个go语言开发的开源的应用容器引擎，采用沙盒机制。简单点说docker就是能够将应用软件及环境部署在其容器内部生成新的镜像，实现在安装docker的环境中快速部署安装. docker实际应用1、docker下载安装参考教程中的wget -qO- https://get.docker.com/| sh并不能成功安装docker,查找了好多资料后，最终采用apt-get install docker.io才算完成了docker的安装在终端运行执行docker后出现了一系列docker操作参数表明docker安装成功。划重点了如果想今后要以非root用户直接运行docker时，需要执行sudo usermod -aG docker 用户名，将用户添加到docker用户组中。重启系统方可有效。 2、docker使用docker使用流程分为镜像(可下载可自己构建镜像)和容器。 docker构造镜像构造镜像创建新目录进入目录创建Dockfile文件编写Dockfile。Dockerfile由一系列指令(必须为大写字母)和参数组成每条指令都会创建一个新的镜像层并对镜像进行提交。在Dockerfile文件中执行docker build docker rmi #删除imagesdocker ps #查看运行容器docker ps -a #查看所有容器docker exec -it d27bd3008ad9 /bin/bash #进入容器docker stop $(docker ps -q) #停用全部运行终中的容器docker rm $(docker ps -aq) #删除全部容器docker stop $(docker ps -q) &amp; docker rm $(docker ps -aq) #实现停用并删除容器docker attach 名字 #进入容器exit后退出后台运行docker exec -it 容器名 /bin/sh #进入容器后exit不会退出后台 docker save -o xxx.tar 镜像名 #选择打包镜像，执行打包命令docker load -i xxx.tar #导入压缩镜像包 docker save 镜像ID &gt; xxx.tar #打包镜像docker load &lt; xxx.tar #加载镜像]]></content>
+      <tags>
+        <tag>docker</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[transplant]]></title>
@@ -47,7 +92,7 @@
   <entry>
     <title><![CDATA[Linux]]></title>
     <url>%2F2018%2F02%2F08%2Fubuntu%2F</url>
-    <content type="text"><![CDATA[类Unix系统Linux系统中一切都是文件文件管理系统linux系统启动过程内核的引导运行init系统初始化建立终端用户登录系统 后台 终端 会话 apt-get，是一条linux命令，适用于deb包管理式的操作系统，主要用于自动从互联网的软件仓库中搜索、安装、升级、卸载软件或操作系统。 vimUbuntu的vim使用在命令行窗口中输入以下命令即可 启动vimvim 直接启动vimvim filename 打开vim并创建名为filename的文件显示行号：set nu 显示行号：set nonu 取消显示行号：set nu! 取消显示行号a\i\o进入编辑模式退出命令 :wq 保存并退出 ZZ 保存并退出 :q! 强制退出并忽略所有更改 :e! 放弃所有修改，并打开原来文件 delectcd filerm -r 文件夹名 #删除一个不是空的文件名rm -f 文件名 #强制删除一个文件mkdir file #创建一个目录touch filename #创建一个文件 VMwarectrl+g进入虚拟机ctrl+alt退出虚拟机VMware Tools ubuntu1、CTRL+ALT+T2、dash主页搜索终端 ubuntu有以下方式切换到root身份。1、sudo+命令，输入当前用户密码后以root权限执行命令，有时间限制且仅限当前命令。 2、sudo -i，输入当前用户密码后以root权限登录shell，无时间限制。使用exit或logout退出。 3、su，输入root账户的密码后切换到root身份，无时间限制。su 用户名切换回其它用户。 4、sudo su，效果同su，只是不需要root的密码，而需要当前用户的密码 Ubuntu下挂载及卸载U盘1、插入U盘前运行 cat /proc/partitions,查看当前有那些分区 2、插入u盘运行cat /proc/partitions 查看新增了那些分区（通常为sda、sdb） 3、fdisk -l /dev/sdb #查看U盘格式 3、执行挂载命令sudo mount -t msdos /dev/sdb /mnt/usb #/mnt/usb当前存在 fat16 mount -t msdos /dev/sdb1 /mnt/usb fat32 mount -t vfat /dev/sdb1 /mnt/usb ext2 mount -t ext2 /dev/sda1 /mnt/usb 4、cd /mnt/usb #即可使用u盘 5、使用完毕执行sudo umount /mnt/usb rhel7root;qprootlocaluser:12345 ln -s 源文件 目标文件 #软链接这是一个深坑。 策略 规则 多个规则合成一个链 控制类型ACCEPT：允许通过LOG:记录日志信息REJECT：拒绝通过，必要时给出提示。DROP：直接放弃 规则链依据处理数据包的位置不同而进行分类PREROUTING:在进行路由选择前处理数据包INPUT:处理入站的数据包OUTPUT:处理出站的数据包FORWARD:处理转发的数据包POSTROUTING:在进行路由选择后处理数据包 Iptables中的规则表是用于容纳规则链raw表：确定是否对该数据进行状态跟踪managle表：为数据包设置标记nat表：修改数据包中的源、目标IP地址或端口filter表：确定是否放行该数据包（过滤） iptables [-t 表名] 选项 [链名] [条件] [-j 控制类型] SNAT源地址转换技术（让多个内网用户通过一个外网地址上网）DNAT目的地址转换技术（让外网IP用户访问局域网内不同的服务器） nmtui]]></content>
+    <content type="text"><![CDATA[类Unix系统Linux系统中一切都是文件文件管理系统linux系统启动过程内核的引导运行init系统初始化建立终端用户登录系统 后台 终端 会话 apt-get，是一条linux命令，适用于deb包管理式的操作系统，主要用于自动从互联网的软件仓库中搜索、安装、升级、卸载软件或操作系统。 vimUbuntu的vim使用在命令行窗口中输入以下命令即可 启动vimvim 直接启动vimvim filename 打开vim并创建名为filename的文件显示行号：set nu 显示行号：set nonu 取消显示行号：set nu! 取消显示行号a\i\o进入编辑模式退出命令 :wq 保存并退出 ZZ 保存并退出 :q! 强制退出并忽略所有更改 :e! 放弃所有修改，并打开原来文件 delectcd filerm -r 文件夹名 #删除一个不是空的文件名rm -f 文件名 #强制删除一个文件mkdir file #创建一个目录touch filename #创建一个文件 VMwarectrl+g进入虚拟机ctrl+alt退出虚拟机VMware Tools ubuntu1、CTRL+ALT+T2、dash主页搜索终端 ubuntu有以下方式切换到root身份。1、sudo+命令，输入当前用户密码后以root权限执行命令，有时间限制且仅限当前命令。 2、sudo -i，输入当前用户密码后以root权限登录shell，无时间限制。使用exit或logout退出。 3、su，输入root账户的密码后切换到root身份，无时间限制。su 用户名切换回其它用户。 4、sudo su，效果同su，只是不需要root的密码，而需要当前用户的密码 Ubuntu下挂载及卸载U盘1、插入U盘前运行 cat /proc/partitions,查看当前有那些分区 2、插入u盘运行cat /proc/partitions 查看新增了那些分区（通常为sda、sdb） 3、fdisk -l /dev/sdb #查看U盘格式 3、执行挂载命令sudo mount -t msdos /dev/sdb /mnt/usb #/mnt/usb当前存在 fat16 mount -t msdos /dev/sdb1 /mnt/usb fat32 mount -t vfat /dev/sdb1 /mnt/usb ext2 mount -t ext2 /dev/sda1 /mnt/usb 4、cd /mnt/usb #即可使用u盘 5、使用完毕执行sudo umount /mnt/usb rhel7root;qprootlocaluser:12345 ln -s 源文件 目标文件 #软链接这是一个深坑。 策略 规则 多个规则合成一个链 控制类型ACCEPT：允许通过LOG:记录日志信息REJECT：拒绝通过，必要时给出提示。DROP：直接放弃 规则链依据处理数据包的位置不同而进行分类PREROUTING:在进行路由选择前处理数据包INPUT:处理入站的数据包OUTPUT:处理出站的数据包FORWARD:处理转发的数据包POSTROUTING:在进行路由选择后处理数据包 Iptables中的规则表是用于容纳规则链raw表：确定是否对该数据进行状态跟踪managle表：为数据包设置标记nat表：修改数据包中的源、目标IP地址或端口filter表：确定是否放行该数据包（过滤） iptables [-t 表名] 选项 [链名] [条件] [-j 控制类型] SNAT源地址转换技术（让多个内网用户通过一个外网地址上网）DNAT目的地址转换技术（让外网IP用户访问局域网内不同的服务器） nmtui ubuntu server 安装VMware 12安装Ubuntu server 16.04和VMware Tools]]></content>
       <tags>
         <tag>linux</tag>
       </tags>
@@ -136,11 +181,11 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[database]]></title>
-    <url>%2F2018%2F01%2F14%2Fdatabase%2F</url>
-    <content type="text"><![CDATA[麻蛋，几日不用hexo都忘记了要先进入blog才能执行hexo语句，看来还是要多做笔记呀！ 数据库突然就连不上了，那就看看是怎么回事呗。数据库安装教程cmd命令行操作数据库python中操作mysql的pymysql模块详解python使用MySQL数据库 启动MYSQL服务：net start mysql停止MYSQL服务：net stop mysql移出mysql服务：mysqld-nt –remove如何执行sql脚本$ mysql -u root -p &lt; schema.sql]]></content>
+    <title><![CDATA[python mysql]]></title>
+    <url>%2F2018%2F01%2F14%2Fpython-MySql%2F</url>
+    <content type="text"><![CDATA[麻蛋，几日不用hexo都忘记了要先进入blog才能执行hexo语句，看来还是要多做笔记呀！ MySQL安装及配置数据库突然就连不上了，那就看看是怎么回事呗。mysql 5.6.36 win7 32位免安装版配置 win10上安装mysql cmd命令行操作数据库 1234567891011121314151617181920212223242526272829303132#查看数据库、表、数据字段、数据C:\User\xxx\&gt; mysql -u root -p #连接数据库Enter password:mysql&gt; show databases; #查看当前所有的数据库英文状态下mysql&gt; use test; #use 数据库名；选择数据库mysql&gt; show tables; #查看当前数据库所有的表mysql&gt; desc user; #desc 表名;查看某个表名的字段结构 desc=descriptionmysql&gt; select * from 表名; #查询表数据#新建数据库、数据表、数据mysql&gt; create database admin; #create database 数据库名;新建数据库mysql&gt; use admin; mysql&gt; create table one( -&gt; id int(8) not null, -&gt; name char(30) -&gt; ) -&gt; ; #字段用逗号隔开，最后一行不用mysql&gt; insert into one values(1,'lisi');#修改数据表，修改数据1、修改数据表mysql&gt; alter table one add age int(8);mysql&gt; alter table one add hoby char(32) after id;mysql&gt; alter table one add address char(10) first;2、修改数据mysql&gt; update one set name = 'xi' where id = 1;#删除数据库、数据表、数据mysql&gt; drop database try; #删除数据库mysql&gt; drop table user; #删除数据表mysql&gt; delete from 表名 where id=1; #删除数据mysql&gt; eixt; 如何执行sql脚本 启动MYSQL服务：net start mysql 停止MYSQL服务：net stop mysql 移出mysql服务：mysqld-nt –remove 安装MySQL驱动python中操作mysql的pymysql模块详解 python使用MySQL数据库 我该如何向非技术人解释SQL注入 12345678910111213141516#!/usr/bin/env python# -*- coding:utf-8 -*-import pymysql#创建连接conn = pymysql.connect(user='root',password='password',db='test')#创建游标cursor = conn.cursor()#执行SQL，并打印结果：cursor.execute('select * from one')#打印查询结果：print(cursor.fetchall())#关闭游标cursor.close()#关闭连接conn.close() SQL注入，就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。参数化查询解决SQL注入问题]]></content>
       <tags>
-        <tag>厚积薄发</tag>
+        <tag>database</tag>
       </tags>
   </entry>
   <entry>
