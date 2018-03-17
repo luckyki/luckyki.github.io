@@ -107,17 +107,17 @@
 
 
 
-<meta name="description" content="一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda1、下载对应版本    清华镜像 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题—安装Anaconda之前已经安装python3.怎么解决 Ubuntu下安装Anaconda">
+<meta name="description" content="一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda及多版本管理1、    清华镜像下载对应版本 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题——安装Anaconda之前已经安装python3.怎么解决  不好使呀！删除python3.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="annconda">
 <meta property="og:url" content="http://yidishui.top/2018/03/12/anaconda/index.html">
 <meta property="og:site_name" content="一滴水">
-<meta property="og:description" content="一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda1、下载对应版本    清华镜像 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题—安装Anaconda之前已经安装python3.怎么解决 Ubuntu下安装Anaconda">
+<meta property="og:description" content="一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda及多版本管理1、    清华镜像下载对应版本 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题——安装Anaconda之前已经安装python3.怎么解决  不好使呀！删除python3.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-12T13:59:33.349Z">
+<meta property="og:updated_time" content="2018-03-13T08:13:57.398Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="annconda">
-<meta name="twitter:description" content="一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda1、下载对应版本    清华镜像 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题—安装Anaconda之前已经安装python3.怎么解决 Ubuntu下安装Anaconda">
+<meta name="twitter:description" content="一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda及多版本管理1、    清华镜像下载对应版本 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题——安装Anaconda之前已经安装python3.怎么解决  不好使呀！删除python3.">
 
 
 
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  98 字
+                  245 字
                 </span>
               
 
@@ -445,9 +445,12 @@
       
         <p>一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！</p>
 <p>今天就来见识一下。</p>
-<h3 id="Windows下安装Anaconda"><a href="#Windows下安装Anaconda" class="headerlink" title="Windows下安装Anaconda"></a>Windows下安装Anaconda</h3><p>1、下载对应版本<a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener">    清华镜像</a></p>
+<h3 id="Windows下安装Anaconda及多版本管理"><a href="#Windows下安装Anaconda及多版本管理" class="headerlink" title="Windows下安装Anaconda及多版本管理"></a>Windows下安装Anaconda及多版本管理</h3><p>1、<a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener">    清华镜像</a>下载对应版本</p>
 <p>2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6.</p>
-<p>3、解决问题—<a href="https://www.cnblogs.com/yamin/p/7111397.html" target="_blank" rel="noopener">安装Anaconda之前已经安装python3.怎么解决</a></p>
+<p>3、解决问题——<a href="https://www.cnblogs.com/yamin/p/7111397.html" target="_blank" rel="noopener">安装Anaconda之前已经安装python3.怎么解决</a>  不好使呀！删除python3.6重装Anaconda得了。</p>
+<p><a href="http://blog.csdn.net/zywvvd/article/details/71248557" target="_blank" rel="noopener">Anaconda多环境多版本配置</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;conda --version     <span class="comment">#查看conda版本</span></span><br><span class="line">&gt;conda info --envs   <span class="comment">#查看已有python环境</span></span><br><span class="line">&gt;conda create --name python27 python=2.7   <span class="comment">#自动部署最新版python2.7环境</span></span><br><span class="line">&gt;python --version     <span class="comment">#查看当前使用python版本</span></span><br><span class="line">&gt;activate python27      <span class="comment">#切换当前python版本到python2.7</span></span><br><span class="line">&gt;deactivate    <span class="comment">#从当前目录切换到根目录</span></span><br><span class="line">&gt;conda remove --name python27 --all    <span class="comment">#删除python27环境</span></span><br><span class="line">&gt;conda install -n *** 123  <span class="comment">#将包123安装到***环境中。否则默认安装到当前环境</span></span><br></pre></td></tr></table></figure>
+<p><a href="http://blog.csdn.net/levy_cui/article/details/51143153" target="_blank" rel="noopener">Anaconda和Pycharm安装和配置教程</a></p>
 <h3 id="Ubuntu下安装Anaconda"><a href="#Ubuntu下安装Anaconda" class="headerlink" title="Ubuntu下安装Anaconda"></a>Ubuntu下安装Anaconda</h3>
       
     </div>
@@ -518,6 +521,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/13/爬虫之妹子图/" rel="prev" title="爬虫之妹子图">
+                爬虫之妹子图 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -643,7 +650,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -665,7 +672,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -733,7 +740,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows下安装Anaconda"><span class="nav-number">1.</span> <span class="nav-text">Windows下安装Anaconda</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ubuntu下安装Anaconda"><span class="nav-number">2.</span> <span class="nav-text">Ubuntu下安装Anaconda</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows下安装Anaconda及多版本管理"><span class="nav-number">1.</span> <span class="nav-text">Windows下安装Anaconda及多版本管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ubuntu下安装Anaconda"><span class="nav-number">2.</span> <span class="nav-text">Ubuntu下安装Anaconda</span></a></li></ol></div>
             
 
           </div>
