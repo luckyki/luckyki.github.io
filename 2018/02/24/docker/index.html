@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="一滴水">
 <meta property="og:description" content="在学习linux的过程中发现了一个好的网站菜鸟教程。初入菜鸟教程结构清晰明了，可以让人对一个新的知识点快速建立框架认知。同时还可以作为平常工作的知识点查阅手册。在逗留的过程中发现了好多新的词汇，不免要了解了解。其中的docker就又为我开起来一个新的知识世界。ddocker一个go语言开发的开源的应用容器引擎，采用沙盒机制。简单点说docker就是能够将应用软件及环境部署在其容器内部生成新的镜像，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-10T08:47:04.014Z">
+<meta property="og:updated_time" content="2018-03-19T14:08:51.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker">
 <meta name="twitter:description" content="在学习linux的过程中发现了一个好的网站菜鸟教程。初入菜鸟教程结构清晰明了，可以让人对一个新的知识点快速建立框架认知。同时还可以作为平常工作的知识点查阅手册。在逗留的过程中发现了好多新的词汇，不免要了解了解。其中的docker就又为我开起来一个新的知识世界。ddocker一个go语言开发的开源的应用容器引擎，采用沙盒机制。简单点说docker就是能够将应用软件及环境部署在其容器内部生成新的镜像，">
@@ -407,7 +407,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  582 字
+                  665 字
                 </span>
               
 
@@ -423,7 +423,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2 分钟
+                  3 分钟
                 </span>
               
             </div>
@@ -445,10 +445,17 @@
 
       
         <p>在学习linux的过程中发现了一个好的网站<a href="www.runoob.com">菜鸟教程</a>。初入菜鸟教程结构清晰明了，可以让人对一个新的知识点快速建立框架认知。<br>同时还可以作为平常工作的知识点查阅手册。<br>在逗留的过程中发现了好多新的词汇，不免要了解了解。其中的docker就又为我开起来一个新的知识世界。<br>ddocker一个go语言开发的开源的应用容器引擎，采用沙盒机制。简单点说docker就是能够将应用软件及环境部署在其<font color="#0099ff" size="4">容器</font>内部生成新的<font color="#0099ff" size="4">镜像</font>，实现在安装docker的环境中快速部署安装.</p>
-<h3 id="docker实际应用"><a href="#docker实际应用" class="headerlink" title="docker实际应用"></a>docker实际应用</h3><p>1、docker下载安装<br>参考教程中的wget -qO- <a href="https://get.docker.com/|" target="_blank" rel="noopener">https://get.docker.com/|</a> sh<br>并不能成功安装docker,查找了好多资料后，最终采用apt-get install docker.io才算完成了docker的安装<br>在终端运行执行docker后出现了一系列docker操作参数表明docker安装成功。<br>划重点了如果想今后要以非root用户直接运行docker时，需要执行sudo usermod -aG docker 用户名，将用户添加到docker用户组中。<font color="#0099ff" size="4">重启系统</font>方可有效。</p>
-<p>2、docker使用<br>docker使用流程分为镜像(可下载可自己构建镜像)和容器。</p>
+<h3 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h3><h4 id="1、Ubuntu下docker下载安装"><a href="#1、Ubuntu下docker下载安装" class="headerlink" title="1、Ubuntu下docker下载安装"></a>1、Ubuntu下docker下载安装</h4><p>参考教程中的wget -qO- <a href="https://get.docker.com/|" target="_blank" rel="noopener">https://get.docker.com/|</a> sh<br>并不能成功安装docker,查找了好多资料后，最终采用apt-get install docker.io才算完成了docker的安装<br>在终端运行执行docker后出现了一系列docker操作参数表明docker安装成功。<br>划重点了如果想今后要以非root用户直接运行docker时，需要执行sudo usermod -aG docker 用户名，将用户添加到docker用户组中。<font color="#0099ff" size="4">重启系统</font>方可有效。</p>
+<h4 id="2、win10下安装"><a href="#2、win10下安装" class="headerlink" title="2、win10下安装"></a>2、win10下安装</h4><p><a href="https://get.daocloud.io/toolbox/" target="_blank" rel="noopener">下载DockerToolbox</a>安装即可。可参考<a href="http://blog.csdn.net/dream20nn/article/details/51791062" target="_blank" rel="noopener">win10安装Docker</a></p>
+<p>(Docker for Windows目前只支持专业版坑呀！！！！)</p>
+<p>win10下cmd下使用docker可参考<a href="https://www.cnblogs.com/loveyouyou616/p/6702696.html" target="_blank" rel="noopener">window下docker安装及配置镜像仓库</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\User\m1\&gt; docker-machine ssh  <span class="comment">#cmd下进入docker</span></span><br><span class="line">docker@default:$</span><br></pre></td></tr></table></figure></p>
+<h3 id="Docker使用"><a href="#Docker使用" class="headerlink" title="Docker使用"></a>Docker使用</h3><p>docker使用流程分为镜像(可下载也可自己构建镜像)和容器。</p>
 <h3 id="docker构造镜像"><a href="#docker构造镜像" class="headerlink" title="docker构造镜像"></a>docker构造镜像</h3><p><a href="https://www.cnblogs.com/Bourbon-tuan/p/6867796.html" target="_blank" rel="noopener">构造镜像</a><br>创建新目录进入目录创建Dockfile文件编写Dockfile。<br>Dockerfile由一系列<font color="#0099ff" size="4">指令(必须为大写字母)</font>和<font color="#0099ff" size="4">参数</font>组成<br>每条指令都会创建一个新的镜像层并对镜像进行提交。<br>在Dockerfile文件中执行docker build</p>
-<p>docker rmi <image id=""> #删除images<br>docker ps  #查看运行容器<br>docker ps -a #查看所有容器<br>docker exec -it d27bd3008ad9 /bin/bash  #进入容器<br>docker stop $(docker ps -q) #停用全部运行终中的容器<br>docker rm $(docker ps -aq) #删除全部容器<br>docker stop $(docker ps -q) &amp; docker rm $(docker ps -aq)  #实现停用并删除容器<br>docker attach 名字 #进入容器exit后退出后台运行<br>docker exec -it 容器名 /bin/sh #进入容器后exit不会退出后台</image></p>
+<p>docker login 镜url  #登陆镜像源</p>
+<p>docker  search <image name=""> # 查找镜像</image></p>
+<p>docker pull <image name="">#下载镜像</image></p>
+<p>docker rmi <image id=""> #删除images</image></p>
+<p>docker ps  #查看运行容器<br>docker ps -a #查看所有容器<br>docker exec -it d27bd3008ad9 /bin/bash  #进入容器<br>docker stop $(docker ps -q) #停用全部运行终中的容器<br>docker rm $(docker ps -aq) #删除全部容器<br>docker stop $(docker ps -q) &amp; docker rm $(docker ps -aq)  #实现停用并删除容器<br>docker attach 名字 #进入容器exit后退出后台运行<br>docker exec -it 容器名 /bin/sh #进入容器后exit不会退出后台</p>
 <p>docker save -o xxx.tar 镜像名  #选择打包镜像，执行打包命令<br>docker load -i xxx.tar #导入压缩镜像包</p>
 <p>docker save 镜像ID &gt; xxx.tar #打包镜像<br>docker load &lt; xxx.tar  #加载镜像</p>
 
@@ -656,7 +663,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -746,7 +753,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#docker实际应用"><span class="nav-number">1.</span> <span class="nav-text">docker实际应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#docker构造镜像"><span class="nav-number">2.</span> <span class="nav-text">docker构造镜像</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker安装"><span class="nav-number">1.</span> <span class="nav-text">Docker安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、Ubuntu下docker下载安装"><span class="nav-number">1.1.</span> <span class="nav-text">1、Ubuntu下docker下载安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、win10下安装"><span class="nav-number">1.2.</span> <span class="nav-text">2、win10下安装</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker使用"><span class="nav-number">2.</span> <span class="nav-text">Docker使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#docker构造镜像"><span class="nav-number">3.</span> <span class="nav-text">docker构造镜像</span></a></li></ol></div>
             
 
           </div>

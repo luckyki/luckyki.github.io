@@ -114,7 +114,7 @@
 <meta property="og:site_name" content="一滴水">
 <meta property="og:description" content="一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda及多版本管理1、    清华镜像下载对应版本 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题——安装Anaconda之前已经安装python3.怎么解决  不好使呀！删除python3.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-13T08:13:57.398Z">
+<meta property="og:updated_time" content="2018-03-23T10:46:24.155Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="annconda">
 <meta name="twitter:description" content="一直有听说Anaconda,作为一个集成多个包的python发行版，一直名声在外呀！ 今天就来见识一下。 Windows下安装Anaconda及多版本管理1、    清华镜像下载对应版本 2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6. 3、解决问题——安装Anaconda之前已经安装python3.怎么解决  不好使呀！删除python3.">
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  245 字
+                  404 字
                 </span>
               
 
@@ -422,7 +422,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -449,7 +449,8 @@
 <p>2、安装。ps:命令行输入python依然显示不出Anaconda，估计是已经安装了pyhton3.6.</p>
 <p>3、解决问题——<a href="https://www.cnblogs.com/yamin/p/7111397.html" target="_blank" rel="noopener">安装Anaconda之前已经安装python3.怎么解决</a>  不好使呀！删除python3.6重装Anaconda得了。</p>
 <p><a href="http://blog.csdn.net/zywvvd/article/details/71248557" target="_blank" rel="noopener">Anaconda多环境多版本配置</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;conda --version     <span class="comment">#查看conda版本</span></span><br><span class="line">&gt;conda info --envs   <span class="comment">#查看已有python环境</span></span><br><span class="line">&gt;conda create --name python27 python=2.7   <span class="comment">#自动部署最新版python2.7环境</span></span><br><span class="line">&gt;python --version     <span class="comment">#查看当前使用python版本</span></span><br><span class="line">&gt;activate python27      <span class="comment">#切换当前python版本到python2.7</span></span><br><span class="line">&gt;deactivate    <span class="comment">#从当前目录切换到根目录</span></span><br><span class="line">&gt;conda remove --name python27 --all    <span class="comment">#删除python27环境</span></span><br><span class="line">&gt;conda install -n *** 123  <span class="comment">#将包123安装到***环境中。否则默认安装到当前环境</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://www.cnblogs.com/lemonbit/p/7068091.html" target="_blank" rel="noopener">Anaconda安装虚拟环境到指定路径</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&gt;conda --version     <span class="comment">#查看conda版本</span></span><br><span class="line">&gt;conda info --envs   <span class="comment">#查看已有python环境</span></span><br><span class="line">&gt;conda create --name python27 python=2.7   <span class="comment">#自动部署最新版python2.7环境</span></span><br><span class="line">&gt;python --version     <span class="comment">#查看当前使用python版本</span></span><br><span class="line">&gt;activate python27      <span class="comment">#切换当前python版本到python2.7</span></span><br><span class="line">&gt;deactivate    <span class="comment">#从当前目录切换到根目录</span></span><br><span class="line">&gt;conda remove --name python27 --all    <span class="comment">#删除python27环境</span></span><br><span class="line">&gt;conda install -n *** 123  <span class="comment">#将包123安装到***环境中。否则默认安装到当前环境</span></span><br><span class="line"></span><br><span class="line">&gt; conda create --prefix=D:\python\fsk python=3.6  <span class="comment">#自动部署fsk环境到D:\python中</span></span><br><span class="line">&gt; activate D:\python\fsk  <span class="comment">#激活指定路径下的虚拟环境</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#anaconda下使用virtualenv创建python虚拟环境</span></span><br><span class="line">&gt; pip install virtualenv <span class="comment">#安装virtualenv包</span></span><br><span class="line">&gt; virtualenv --version <span class="comment">#查看是否安装virtualenv包</span></span><br><span class="line">&gt; virtualenv venv <span class="comment">#在当前环境下创建一个名字是venv的虚拟环境。</span></span><br><span class="line">&gt; activate        <span class="comment">#激活当前路径下的虚拟环境</span></span><br><span class="line">(env)  F:\git&gt; python hello.py   <span class="comment">#在激活环境的条件下运行hello.py程序</span></span><br><span class="line">(env)  F:\git&gt; deactivate    <span class="comment">#deactivate 退出虚拟环境，返回全局python解释器</span></span><br></pre></td></tr></table></figure>
 <p><a href="http://blog.csdn.net/levy_cui/article/details/51143153" target="_blank" rel="noopener">Anaconda和Pycharm安装和配置教程</a></p>
 <h3 id="Ubuntu下安装Anaconda"><a href="#Ubuntu下安装Anaconda" class="headerlink" title="Ubuntu下安装Anaconda"></a>Ubuntu下安装Anaconda</h3>
       
@@ -650,7 +651,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
