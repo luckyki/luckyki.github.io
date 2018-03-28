@@ -107,18 +107,18 @@
 
 
 
-<meta name="description" content="web框架，看来几遍还是不清楚工作流程，还是要看一下大神的解析。Python廖雪峰实战web开发详解WEB端开发 1.编写URL处理函数    1.1 aiohttp编写URL处理函数        第一步，添加协程装饰器            async def handle_url_xxx(request):                pass     第二步，对request参数进行操作">
+<meta name="description" content="web框架，看了几遍还是不清楚工作流程，还是要看一下大神的解析。Python廖雪峰实战web开发详解WEB端开发 1.编写URL处理函数1.1 aiohttp编写URL处理函数第一步，添加协程装饰器12async def handle_url_xxx(request):	pass 第二步，对request参数进行操作，以获取相应的参数12url_param = request.math_info[">
 <meta name="keywords" content="思路">
 <meta property="og:type" content="article">
 <meta property="og:title" content="web">
 <meta property="og:url" content="http://yidishui.top/2018/01/15/web/index.html">
 <meta property="og:site_name" content="一滴水">
-<meta property="og:description" content="web框架，看来几遍还是不清楚工作流程，还是要看一下大神的解析。Python廖雪峰实战web开发详解WEB端开发 1.编写URL处理函数    1.1 aiohttp编写URL处理函数        第一步，添加协程装饰器            async def handle_url_xxx(request):                pass     第二步，对request参数进行操作">
+<meta property="og:description" content="web框架，看了几遍还是不清楚工作流程，还是要看一下大神的解析。Python廖雪峰实战web开发详解WEB端开发 1.编写URL处理函数1.1 aiohttp编写URL处理函数第一步，添加协程装饰器12async def handle_url_xxx(request):	pass 第二步，对request参数进行操作，以获取相应的参数12url_param = request.math_info[">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-06T11:20:37.319Z">
+<meta property="og:updated_time" content="2018-03-28T12:24:19.736Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="web">
-<meta name="twitter:description" content="web框架，看来几遍还是不清楚工作流程，还是要看一下大神的解析。Python廖雪峰实战web开发详解WEB端开发 1.编写URL处理函数    1.1 aiohttp编写URL处理函数        第一步，添加协程装饰器            async def handle_url_xxx(request):                pass     第二步，对request参数进行操作">
+<meta name="twitter:description" content="web框架，看了几遍还是不清楚工作流程，还是要看一下大神的解析。Python廖雪峰实战web开发详解WEB端开发 1.编写URL处理函数1.1 aiohttp编写URL处理函数第一步，添加协程装饰器12async def handle_url_xxx(request):	pass 第二步，对request参数进行操作，以获取相应的参数12url_param = request.math_info[">
 
 
 
@@ -407,7 +407,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  472 字
+                  461 字
                 </span>
               
 
@@ -444,33 +444,13 @@
       
 
       
-        <p>web框架，看来几遍还是不清楚工作流程，还是要看一下大神的解析。<br><a href="http://blog.csdn.net/qq_38801354/article/details/73008111" target="_blank" rel="noopener">Python廖雪峰实战web开发详解</a><br><a href="https://imququ.com/" target="_blank" rel="noopener">WEB端开发</a></p>
-<p>1.编写URL处理函数<br>    1.1 aiohttp编写URL处理函数<br>        第一步，添加协程装饰器<br>            async def handle_url_xxx(request):<br>                pass</p>
-<pre><code>    第二步，对request参数进行操作，以获取相应的参数
-        url_param = request.math_info[&apos;key&apos;]
-        query_params = parse_qs(requset.query_string)
-    第三步，构建Response对象并返回
-        text = rander(&apos;templete&apos;,data)
-        return web.Response(text.encode(&apos;utf-8&apos;))
-
-1.2新建web框架编写URL处理函数
-    1.2.1 @get和@post(把一个函数映射为一个&lt;font color=#0099ff  size=4&gt;URL处理函数&lt;/font&gt;)
-    1.2.2 定义RequestHandler(URL处理函数不一定是一个&lt;font color=#0099ff  size=4&gt;coroutine&lt;/font&gt;，因此我们用RequestHandler()
-                             来&lt;font color=#0099ff  size=4&gt;封装&lt;/font&gt;一个URL处理函数。
-                             最后调用URL函数时，会返回一个APIError的错误，在&lt;font color=#0099ff  size=4&gt;day10&lt;/font&gt;)
-</code></pre><p>2、编写add_route函数及add_static函数<br>    2.1 编写add_route函数及批量处理add_routes()函数（用来<font color="#0099ff" size="4">注册</font>一个URL处理函数，主要起验证函数是否有包含URL的响应方法与路径信息，以及将函数变为协程。）<br>    2.2编写添加静态文件add_static()函数<br>    2.3编写初始化jinja2模板init_jinja2()函数</p>
-<p>3、编写middleware</p>
-<pre><code>  #middleware是一种拦截器，一个URL在被某个函数处理前，可以经过一系列的middleware的处理。一个middleware可以改变URL的输入、输出，甚至可以决定不继续处理而直接返回。
-  middleware的用处就在于把通用的功能从每个URL处理函数中拿出来，集中放到一个地方。
-
-例如，一个记录URL日志的logger可以简单定义如下：
-</code></pre><p>```<br>    @asyncio.coroutine<br>    def logger_factory(app, handler):<br>        @asyncio.coroutine<br>        def logger(request):</p>
-<pre><code>    # 记录日志:
-    logging.info(&apos;Request: %s %s&apos; % (request.method, request.path))
-    # 继续处理请求:
-    return (yield from handler(request))
-return logger
-</code></pre><p>```bash</p>
+        <p>web框架，看了几遍还是不清楚工作流程，还是要看一下大神的解析。<br><a href="http://blog.csdn.net/qq_38801354/article/details/73008111" target="_blank" rel="noopener">Python廖雪峰实战web开发详解</a><br><a href="https://imququ.com/" target="_blank" rel="noopener">WEB端开发</a></p>
+<h3 id="1-编写URL处理函数"><a href="#1-编写URL处理函数" class="headerlink" title="1.编写URL处理函数"></a>1.编写URL处理函数</h3><h4 id="1-1-aiohttp编写URL处理函数"><a href="#1-1-aiohttp编写URL处理函数" class="headerlink" title="1.1 aiohttp编写URL处理函数"></a>1.1 aiohttp编写URL处理函数</h4><p>第一步，添加协程装饰器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">async def handle_url_xxx(request):</span><br><span class="line">	pass</span><br></pre></td></tr></table></figure></p>
+<p>第二步，对request参数进行操作，以获取相应的参数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url_param = request.math_info[<span class="string">'key'</span>]</span><br><span class="line">query_params = parse_qs(requset.query_string)</span><br></pre></td></tr></table></figure></p>
+<p>第三步，构建Response对象并返回<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">text = rander(<span class="string">'templete'</span>,data)</span><br><span class="line"><span class="built_in">return</span> web.Response(text.encode(<span class="string">'utf-8'</span>))</span><br></pre></td></tr></table></figure></p>
+<h4 id="1-2新建web框架编写URL处理函数"><a href="#1-2新建web框架编写URL处理函数" class="headerlink" title="1.2新建web框架编写URL处理函数"></a>1.2新建web框架编写URL处理函数</h4><p>1.2.1 @get和@post(把一个函数映射为一个<font color="#0099ff" size="4">URL处理函数</font>)<br>1.2.2 定义RequestHandler(URL处理函数不一定是一个<font color="#0099ff" size="4">coroutine</font>，因此我们用RequestHandler()<br>来<font color="#0099ff" size="4">封装</font>一个URL处理函数。<br>最后调用URL函数时，会返回一个APIError的错误，在<font color="#0099ff" size="4">day10</font>)</p>
+<h3 id="2、编写add-route函数及add-static函数"><a href="#2、编写add-route函数及add-static函数" class="headerlink" title="2、编写add_route函数及add_static函数"></a>2、编写add_route函数及add_static函数</h3><h4 id="2-1-编写add-route函数及批量处理add-routes-函数（用来注册一个URL处理函数，主要起验证函数是否有包含URL的响应方法与路径信息，以及将函数变为协程。）"><a href="#2-1-编写add-route函数及批量处理add-routes-函数（用来注册一个URL处理函数，主要起验证函数是否有包含URL的响应方法与路径信息，以及将函数变为协程。）" class="headerlink" title="2.1 编写add_route函数及批量处理add_routes()函数（用来注册一个URL处理函数，主要起验证函数是否有包含URL的响应方法与路径信息，以及将函数变为协程。）"></a>2.1 编写add_route函数及批量处理add_routes()函数（用来<font color="#0099ff" size="4">注册</font>一个URL处理函数，主要起验证函数是否有包含URL的响应方法与路径信息，以及将函数变为协程。）</h4><h4 id="2-2编写添加静态文件add-static-函数"><a href="#2-2编写添加静态文件add-static-函数" class="headerlink" title="2.2编写添加静态文件add_static()函数"></a>2.2编写添加静态文件add_static()函数</h4><h4 id="2-3编写初始化jinja2模板init-jinja2-函数"><a href="#2-3编写初始化jinja2模板init-jinja2-函数" class="headerlink" title="2.3编写初始化jinja2模板init_jinja2()函数"></a>2.3编写初始化jinja2模板init_jinja2()函数</h4><h3 id="3、编写middleware"><a href="#3、编写middleware" class="headerlink" title="3、编写middleware"></a>3、编写middleware</h3><p>middleware是一种拦截器，一个URL在被某个函数处理前，可以经过一系列的middleware的处理。一个middleware可以改变URL的输入、输出，甚至可以决定不继续处理而直接返回。<br>middleware的用处就在于把通用的功能从每个URL处理函数中拿出来，集中放到一个地方。</p>
+<p>例如，一个记录URL日志的logger可以简单定义如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@asyncio.coroutine</span><br><span class="line">    def logger_factory(app, handler):</span><br><span class="line">    @asyncio.coroutine</span><br><span class="line">    def logger(request):</span><br><span class="line">    <span class="comment"># 记录日志:</span></span><br><span class="line">    logging.info(<span class="string">'Request: %s %s'</span> % (request.method, request.path))</span><br><span class="line">    <span class="comment"># 继续处理请求:</span></span><br><span class="line">    <span class="built_in">return</span> (yield from handler(request))</span><br><span class="line">    <span class="built_in">return</span> logger</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -647,8 +627,17 @@ return logger
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -747,6 +736,22 @@ return logger
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-编写URL处理函数"><span class="nav-number">1.</span> <span class="nav-text">1.编写URL处理函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-aiohttp编写URL处理函数"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 aiohttp编写URL处理函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2新建web框架编写URL处理函数"><span class="nav-number">1.2.</span> <span class="nav-text">1.2新建web框架编写URL处理函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、编写add-route函数及add-static函数"><span class="nav-number">2.</span> <span class="nav-text">2、编写add_route函数及add_static函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-编写add-route函数及批量处理add-routes-函数（用来注册一个URL处理函数，主要起验证函数是否有包含URL的响应方法与路径信息，以及将函数变为协程。）"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 编写add_route函数及批量处理add_routes()函数（用来注册一个URL处理函数，主要起验证函数是否有包含URL的响应方法与路径信息，以及将函数变为协程。）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2编写添加静态文件add-static-函数"><span class="nav-number">2.2.</span> <span class="nav-text">2.2编写添加静态文件add_static()函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3编写初始化jinja2模板init-jinja2-函数"><span class="nav-number">2.3.</span> <span class="nav-text">2.3编写初始化jinja2模板init_jinja2()函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、编写middleware"><span class="nav-number">3.</span> <span class="nav-text">3、编写middleware</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
